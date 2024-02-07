@@ -1,0 +1,105 @@
+/* Profile.css */
+
+.home-container {
+  display: flex;
+  align-items: flex-start; /* Align content to the top */
+  height: 100vh;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 50px; /* Adjust the margin as needed */
+}
+
+.hello-text {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.name {
+  color: rgba(255, 124, 3, 1);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.button-container {
+  display: flex; /* Use flexbox to align buttons in the same line */
+  margin-top: 50px;
+}
+
+.button {
+  margin-right: 120px; /* Adjust the margin as needed */
+}
+
+.button button,
+.button-hire button {
+  padding: 7px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+}
+
+.button button {
+  background-color: rgba(255, 124, 3, 1);
+  color: rgba(36, 35, 62, 1);
+}
+
+.button-hire button {
+  background-color: #fff;
+  border: 2px solid rgba(255, 124, 3, 1);
+}
+
+
+.button button:hover,
+.button-hire button:hover {
+  background-color: rgba(36, 35, 62, 1); /* Change to the desired hover background color */
+  color: #fff; /* Change to the desired hover text color */
+  border-color: rgba(36, 35, 62, 1); /* Change to the desired hover border color */
+}
+
+.icons {
+  display: flex;
+  gap: 30px; /* Add space between icons */
+  margin-top: 30px; /* Adjust margin as needed */
+}
+
+.icons i {
+  font-size: 30px; /* Increase the icon size */
+  color: rgba(36, 35, 62, 1); /* Change to the desired icon color */
+  transition: color 0.3s ease, transform 0.3s ease; /* Add transition for smooth color change and zoom effect on hover */
+}
+
+.icons i:hover {
+  color: rgba(255, 124, 3, 1); /* Change to the desired hover color */
+  transform: scale(1.7); /* Zoom in effect on hover, adjust the scale factor as needed */
+}
+
+
+.Line {
+  width: 10%;
+  border-bottom: 2px solid rgba(36, 35, 62, 1); /* Change to the desired line color */
+  margin-top: 720px; /* Adjust margin as needed */
+  margin-right: 600px;
+}
