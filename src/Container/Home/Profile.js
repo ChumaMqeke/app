@@ -5,7 +5,7 @@ import './Profile.css';
 
 export default function Profile() {
   return (
-    <div >
+    <div className='home'>
     <div className='home-container'>
       <div className='home-content'>
         <img src={figmaProfile} alt="Description of the image" />
@@ -35,11 +35,12 @@ export default function Profile() {
               <i class="fa-brands fa-square-whatsapp"></i>
               <i class="fa-brands fa-linkedin"></i>
               </div>
+              
         </div>
+        
       </div>
-      <div className='Line'></div>
     </div>
-  
+    <div className='Line'></div>
     </div>
   );
 }
