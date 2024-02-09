@@ -22,7 +22,7 @@ export default function Profile() {
              
       <div className='button-container'>
               <div className="button">
-                <button>Get Resume</button>
+                 <button>Get Resume</button>
               </div> 
               <div className="button-hire">
                 <button>Hire Me</button>
