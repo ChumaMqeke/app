@@ -1,0 +1,102 @@
+.resume-page {
+    
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh; 
+    position: relative;
+}
+
+.title {
+    margin-left: 650px;
+    margin-top: 80px;
+}
+
+.side-bar {
+    margin-top: 90px;
+    
+    margin-right: 700px;
+    height: 50vh;
+}
+
+.cv-content {
+    margin-top: -390px; 
+    margin-left: 700px;
+    border: 20px solid;
+    height: 50vh;
+   
+}
+
+/*side bar buttons*/
+
+.about-me-button {
+    border-radius: 20px;
+    background-color: rgba(36, 35, 62, 1);
+    padding: 1px;
+    color: white;
+    margin-top: 5px;
+    display: flex;
+}
+
+.about-me-button h5 {
+    margin-left: 100px;
+}
+.experience-button {
+    border-radius: 20px;
+    background-color: rgba(36, 35, 62, 1);
+    padding: 1px;
+    color: white;
+    margin-top: 5px;
+    display: flex;
+}
+
+.experience-button h5 {
+    margin-left: 100px;
+}
+.skills-button {
+    border-radius: 20px;
+    background-color: rgba(36, 35, 62, 1);
+    padding: 1px;
+    color: white;
+    margin-top: 5px;
+    display: flex;
+}
+
+.skills-button h5 {
+    margin-left: 100px;
+}
+.education-button {
+    border-radius: 20px;
+    background-color: rgba(36, 35, 62, 1);
+    padding: 1px;
+    color: white;
+    margin-top: 5px;
+    display: flex;
+}
+
+.education-button h5 {
+    margin-left: 100px;
+}
+.references-button {
+    border-radius: 20px;
+    background-color: rgba(36, 35, 62, 1);
+    padding: 1px;
+    color: white;
+    margin-top: 5px;
+    display: flex;
+}
+
+.references-button h5 {
+    margin-left: 100px;
+}
+.contacts-button {
+    border-radius: 20px;
+    background-color: rgba(36, 35, 62, 1);
+    padding: 1px;
+    color: white;
+    margin-top: 5px;
+    display: flex;
+}
+
+.contacts-button h5 {
+    margin-left: 100px;
+}
