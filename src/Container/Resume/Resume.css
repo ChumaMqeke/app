@@ -100,3 +100,38 @@
 .contacts-button h5 {
     margin-left: 100px;
 }
+
+.sidebar-button {
+    border-radius: 20px;
+    background-color: rgba(36, 35, 62, 1);
+    padding: 1px;
+    color: white;
+    margin-top: 5px;
+    display: flex;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .sidebar-button.active {
+    background-color: #4caf50; /* Change to your active color */
+  }
+  
+  .cv-content {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.3s ease-in-out;
+  }
+  
+  .cv-content.slide-out {
+    height: 50vh; /* Set the desired height */
+  }
+  
+  .experience-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .experience-content.slide-in {
+    max-height: 500px; /* Set the desired max height */
+  }
