@@ -7,7 +7,7 @@ export default function About() {
     <div className='about-page'>
       <div className='about-container'>
       <div class="spinner">
-    <div class="spinner1"> </div>
+    <div class="spinner1"> ,</div>
 </div>
         <div className='left-box'>
         <div className='highlight-box'>

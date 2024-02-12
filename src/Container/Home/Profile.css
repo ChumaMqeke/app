@@ -2,7 +2,7 @@
 
 .home-container {
   display: flex;
-  align-items: flex-start; /* Align content to the top */
+  align-items: flex-start; 
   height: 100vh;
 }
 
@@ -14,7 +14,7 @@
 img {
   max-width: 100%;
   height: auto;
-  margin-right: 50px; /* Adjust the margin as needed */
+  margin-right: 50px; 
 }
 
 .hello-text {
@@ -43,12 +43,12 @@ p {
 }
 
 .button-container {
-  display: flex; /* Use flexbox to align buttons in the same line */
+  display: flex; 
   margin-top: 50px;
 }
 
 .button {
-  margin-right: 120px; /* Adjust the margin as needed */
+  margin-right: 120px; 
 }
 
 .button button,
@@ -74,9 +74,9 @@ p {
 
 .button button:hover,
 .button-hire button:hover {
-  background-color: rgba(36, 35, 62, 1); /* Change to the desired hover background color */
-  color: #fff; /* Change to the desired hover text color */
-  border-color: rgba(36, 35, 62, 1); /* Change to the desired hover border color */
+  background-color: rgba(36, 35, 62, 1); 
+  color: #fff; 
+  border-color: rgba(36, 35, 62, 1); 
 }
 
 .icons {
@@ -86,14 +86,14 @@ p {
 }
 
 .icons i {
-  font-size: 30px; /* Increase the icon size */
-  color: rgba(36, 35, 62, 1); /* Change to the desired icon color */
-  transition: color 0.3s ease, transform 0.3s ease; /* Add transition for smooth color change and zoom effect on hover */
+  font-size: 30px; 
+  color: rgba(36, 35, 62, 1);
+  transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 .icons i:hover {
-  color: rgba(255, 124, 3, 1); /* Change to the desired hover color */
-  transform: scale(1.7); /* Zoom in effect on hover, adjust the scale factor as needed */
+  color: rgba(255, 124, 3, 1); 
+  transform: scale(1.7); 
 }
 
 /*
@@ -104,3 +104,11 @@ p {
   margin-right: 00px;
 }
 */
+
+@media screen and (max-width: 480px) {
+  img {
+    margin-right: 20px;
+  }
+
+  
+}
