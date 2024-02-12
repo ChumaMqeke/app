@@ -4,6 +4,7 @@ import Navbar from "./Container/Navbar/Navbar";
 import Profile from "./Container/Home/Profile";
 import About from "./Container/About/About";
 import Resume from "./Container/Resume/Resume";
+import Skills from "./Container/Skills/Skills";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
      <Profile />
      <About />
      <Resume /> 
+     <Skills />
     </div>
   );
 }
