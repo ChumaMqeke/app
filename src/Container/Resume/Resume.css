@@ -4,11 +4,14 @@
     align-items: flex-start;
     height: 100vh; 
     position: relative;
+    padding-top: 100px;
+    border: 1px solid rgb(112, 112, 111);
+    box-shadow: 5px 5px 10px rgb(112, 112, 111) inset;
 }
 
 .title {
     margin-left: 650px;
-    margin-top: 80px;
+    
 }
 
 .side-bar {
@@ -21,19 +24,23 @@
 .cv-content {
     margin-top: -390px; 
     margin-left: 700px;
-    border: 20px solid;
     height: 50vh;
-   
+    border-radius: 9px;
+    padding: 20px;
+    box-shadow: inset 2px 5px 10px rgb(112, 112, 111);
+    border-left: 2px solid rgba(255, 124, 3, 1);
+    border-bottom: 1px solid rgba(255, 124, 3, 1);
+
 }
 
 /*side bar buttons*/
 
-.about-me-button {
+/* .about-me-button {
     border-radius: 20px;
     background-color: rgba(36, 35, 62, 1);
     padding: 1px;
     color: white;
-    margin-top: 5px;
+    margin-top: 1px;
     display: flex;
 }
 
@@ -99,21 +106,36 @@
 
 .contacts-button h5 {
     margin-left: 100px;
-}
+} */
 
 .sidebar-button {
     border-radius: 20px;
-    background-color: rgba(36, 35, 62, 1);
-    padding: 1px;
-    color: white;
-    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 2px;
+    color: rgba(36, 35, 62, 1);
+    margin-top: 20px;
     display: flex;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
+    height: 30px;
+    align-items: center;
+    width: 250px;
+    margin-left: 30px;
+   
+  }
+
+  .sidebar-button i {
+    color: rgba(255, 255, 255, 1);
+    margin-left: -25px;
+    padding-right: 30px;
+  }
+
+  .sidebar-button h5{
+    padding-left: 70px;
   }
   
   .sidebar-button.active {
-    background-color: #4caf50; /* Change to your active color */
+    background-color: rgba(255, 124, 3, 1);
   }
   
   .cv-content {
@@ -123,15 +145,57 @@
   }
   
   .cv-content.slide-out {
-    height: 50vh; /* Set the desired height */
+    height: 30vh; 
+    margin-top: -600px;
+    margin-left: 500px;
+    width: 400px;
   }
   
-  .experience-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
+  .side-bar-container {
+    width: 300px;
+    align-items: center;
+    position: relative;
+    background-color: rgba(36, 35, 62, 1);
+    height: 500px;
+    box-shadow: 5px 5px 10px rgba(255, 124, 3, 1);
+    margin-top: 1px;
+  }
+ 
+  .side-title {
+    padding-left: 100px;
+    padding-top: 10px;
+    color: aliceblue;
+    
+  }
+
+  .resume-cover {
+    
+    width: 1100px;
+    height: 700px;
+    margin-left: 50px;
+    margin-top: 15px;
   }
   
-  .experience-content.slide-in {
-    max-height: 500px; /* Set the desired max height */
+  .resume-page-container{
+     background-color: rgba(217, 217, 217, 1);
+     padding-top: -20px;
+     box-shadow: 5px 5px 5px rgb(56, 55, 55);
+     height: 700px;
+  }
+
+  .download-button {
+    margin-top: 150px;
+    margin-left: 80px;
+    width: 500px;
+  }
+
+  .download-button button:hover {
+    background-color: rgba(36, 35, 62, 1); 
+    color: #fff; 
+    border-color: rgba(36, 35, 62, 1); 
+  }
+
+  .about-title {
+    margin-top: -700px;
+    margin-left: 600px;
   }
