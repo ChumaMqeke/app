@@ -34,7 +34,7 @@ export default function About() {
             <h2><span className='about-line'>About</span> <span className='text-style'>Me</span></h2>
           </div>
           <div className='top-text'>
-            <img className='profile-picture' src={figmaProfile} alt="Description of the image" />
+            <img className='profile-picture' src={figmaProfile} alt="Profile picture" />
            
             
             <div className='rectangle-box'>

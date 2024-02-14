@@ -5,6 +5,8 @@ import Profile from "./Container/Home/Profile";
 import About from "./Container/About/About";
 import Resume from "./Container/Resume/Resume";
 import Skills from "./Container/Skills/Skills";
+import Projects from "./Container/Projects/Projects";
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
      <About />
      <Resume /> 
      <Skills />
+     <Projects />
     </div>
   );
 }
