@@ -1,15 +1,12 @@
 import React from 'react';
+import { useState, useEffect } from "react";
 import './Projects.css';
 import projectsProfile from './image/project-profile.png';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import AfroStyles from "./AfroStyles";
 
 import projectsProfile1 from './image/project-profile.png';
 import projectsProfile2 from './image/project-profile.png';
@@ -18,62 +15,88 @@ import projectsProfile4 from './image/project-profile.png';
 import projectsProfile5 from './image/project-profile.png';
 
 export default function Projects() {
+
+  const [nav1, setNav1] = useState(null);
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const [slider1, setSlider1] = useState(null);
+  
+  useEffect(() => {
+    setNav1(slider1);
+  }, [slider1])
+
+  const settings = {
+
+    onReInit: () => setCurrentSlide(slider1?.innerSlider.state.currentSlide),
+    lazyLoad: true,
+    asNavFor: ".slider-nav",
+    focusOnSelect: true,
+  
+
+    // dots: true,
+    // speed: 500,
+    // slidesToShow: 2,
+    // slidesToScroll: 2,
+    // infinite: true,
+    // autoplay: true,
+    // autoplaySpeed: 1000,
+    // responsive: [
+    //   {
+    //     breakpoint: 600,
+    //     settings: {
+    //      slidesToShow: 1,
+    //     }
+    //    },
+    //   {
+    //     breakpoint: 1024,
+    //     settings: {
+    //      slidesToShow: 2,
+    //     }
+    //   }
+    // ]
+
+    nextArrow: (
+      <div>
+        <div className="next-slick-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" stroke="black" height="24" viewBox="0 -960 960 960" width="24"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+        </div>
+      </div>
+    ),
+
+    prevArrow: (
+      <div>
+        <div className="next-slick-arrow rotate-180">
+          <svg xmlns="http://www.w3.org/2000/svg" stroke="black" height="24" viewBox="0 -960 960 960" width="24"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z"/></svg>
+        </div>
+      </div>
+    ),
+  };
+
   return (
     <div className='projects-page'>
         <div className='projects-container'>
 
             <div className='projects-slide'>
-                
-{/* Swiper */}
-<div className='container'>
-<Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        loop={true}
-        slidesPerView={'auto'}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 2.5,
-        }}
-        pagination={{ el: '.swiper-pagination', clickable: true }}
-        navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-          clickable: true,
-        }}
-        modules={[EffectCoverflow, Pagination, Navigation]}
-        className="swiper_container"
-      >
-        <SwiperSlide>
-          <img src={projectsProfile1} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={projectsProfile2} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={projectsProfile3} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={projectsProfile4} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={projectsProfile5} alt="slide_image" />
-        </SwiperSlide>
-        
-        <div className="slider-controler">
-          <div className="swiper-button-prev slider-arrow">
-            <ion-icon name="arrow-back-outline"></ion-icon>
-          </div>
-          <div className="swiper-button-next slider-arrow">
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-          </div>
-          <div className="swiper-pagination"></div>
-        </div>
-      </Swiper>
+              
+            <div className="content">
+      <h1 className="header">Afro Styles Fashion Store</h1>
+      <div className="container">
+        <Slider {...settings}>
+          {AfroStyles.map((item) => (
+            <div key={item.id}>
+              <div className="img-body">
+                <img src={item.src} alt={item.alt} />
+              </div>
+              <div> 
+                <h2>{item.title}</h2>
+                <p>{item.description}</p>
+              </div>
+            </div>
+          ))}
+        </Slider>
       </div>
+    </div>
+
+            </div>
                 <div className='project-links'></div>
             </div>
 
@@ -82,6 +105,6 @@ export default function Projects() {
             </div>
 
         </div>
-    </div>
+  
   );
 }
