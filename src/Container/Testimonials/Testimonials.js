@@ -1,8 +1,10 @@
-import React from 'react'
-import './Testimonials.css'
 
+import './Testimonials.css'
+import React, { useState } from 'react';
 
 export default function Testimonials() {
+
+
   return (
     <div className='testimonials-page'>
       <div className='testimonials-title'>
@@ -83,6 +85,7 @@ export default function Testimonials() {
   </div>
 
       </div>
+     
     </div>
   )
 }

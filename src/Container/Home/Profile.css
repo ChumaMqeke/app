@@ -105,10 +105,27 @@ p {
 }
 */
 
-@media screen and (max-width: 480px) {
-  img {
-    margin-right: 20px;
+@media screen and (max-width: 769px) {
+  .home-container {
+    align-items: center; /* Adjusted alignment for smaller screens */
   }
 
-  
+  .home-content {
+    flex-direction: column; /* Stacking elements vertically on smaller screens */
+    align-items: center;
+    text-align: center;
+  }
+
+  img {
+    margin-bottom: 20px; /* Adjusted margin for better spacing on smaller screens */
+  }
+
+  .button-container {
+    flex-direction: column; /* Stacking buttons vertically on smaller screens */
+    margin-top: 20px; /* Adjusted margin for better spacing on smaller screens */
+  }
+
+  .button {
+    margin-right: 0; /* Removed margin for better spacing on smaller screens */
+  }
 }
