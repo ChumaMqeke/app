@@ -6,7 +6,7 @@ import About from "./Container/About/About";
 import Resume from "./Container/Resume/Resume";
 import Skills from "./Container/Skills/Skills";
 import Projects from "./Container/Projects/Projects";
-import Testimonials from "./"
+import Testimonials from "./Container/Testimonials/Testimonials";
 
 
 function App() {

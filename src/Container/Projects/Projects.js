@@ -43,8 +43,8 @@ export default function Projects() {
   
   return (
     <div className='projects-page'>
-      <div className='projects'>
-      {/* <h3 id='project-title'>
+      {/* <div className='projects'>
+      <h3 id='project-title'>
         <span className="about-line">chum</span>a<span className="name"> Mqeke</span>
       </h3> */}
         <div className='projects-container'>
@@ -70,7 +70,6 @@ export default function Projects() {
                 <img className='my-side-picture' src={projectsProfile} alt='projects profile picture'></img>
             </div>
         </div>
-        </div>
-  
+       
   );
 }

@@ -7,12 +7,9 @@
     align-items: center;
     margin: 0;
     background-color: rgba(36, 35, 62, 1);
-    height: 100vh;
+    height: 90vh;
 }
 
-.project {
-  border: #fff 3px solid ;
-}
 
 #project-title {
   margin-top: 100px;
