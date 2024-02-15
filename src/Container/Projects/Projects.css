@@ -1,9 +1,21 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+
 .projects-page {
     display: flex;
     align-items: center;
     margin: 0;
     background-color: rgba(36, 35, 62, 1);
     height: 100vh;
+}
+
+.project {
+  border: #fff 3px solid ;
+}
+
+#project-title {
+  margin-top: 100px;
 }
 
 .projects-container {
@@ -25,29 +37,11 @@
 .my-picture {
     border: 5px solid;
     width: 300px;
+    background-image: linear-gradient(to bottom, #fff, rgba(36, 35, 62, 1) );
 }
 
-/* Swiper */
 
-.container {
-    max-width: 124rem;
-    padding: 4rem 1rem;
-    margin: 0 auto;
-  }
-
-.swiper_container {
-    height: 30rem;
-    padding: 2rem 0;
-    position: relative;
-  }
-  
-  .swiper-slide {
-    width: 37rem;
-    height: 42rem;
-    position: relative;
-  }
-  
-  @media (max-width: 500px) {
+  /* @media (max-width: 500px) {
     .swiper_container {
       height: 47rem;
     }
@@ -114,71 +108,10 @@
       transform: translateX(-20%) !important;
     }
   }
-  
-  .slider-controler .slider-arrow {
-    background: var(--white);
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 50%;
-    left: 42%;
-    transform: translateX(-42%);
-    filter: drop-shadow(0px 0px 0px rgba(216, 0, 245, 0.1));
-  }
-  
-  .slider-controler .slider-arrow ion-icon {
-    font-size: 2rem;
-    color: rgba(255, 124, 3, 1);
-  }
-  
-  .slider-controler .slider-arrow::after {
-    content: '';
-  }
-  
-  .swiper-pagination {
-    position: relative;
-    width: 15rem !important;
-    bottom: 1rem;
-  }
-  
-  .swiper-pagination .swiper-pagination-bullet {
-    color: #fff;
-  }
-  
-  .swiper-pagination .swiper-pagination-bullet-active {
-    background: var(--primary);
-  }
+   */
+  /* App.css */
 
-  .content {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .header {
-    font-size: 30px;
-  }
-  
-  .img-body img {
-    display: flex;
-    margin: 0 auto;
-    height: 40vh;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .img-body {
-    width: 400px;
-    aspect-ratio: 1/1;
-    outline-color: red;
-    display: inline-block;
-  }
-  
-  .container {
-    margin: 0 auto;
-    width: 100%;
-    height: 80vh;
-    border-color: white;
-  }
-  
-  .rotate-180 {
-    transform: rotate(180deg);
-  }
+
+.container {
+  padding: 2.5rem 0;
+}

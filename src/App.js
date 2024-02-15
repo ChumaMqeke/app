@@ -6,6 +6,7 @@ import About from "./Container/About/About";
 import Resume from "./Container/Resume/Resume";
 import Skills from "./Container/Skills/Skills";
 import Projects from "./Container/Projects/Projects";
+import Testimonials from "./"
 
 
 function App() {
@@ -15,8 +16,9 @@ function App() {
      <Profile />
      <About />
      <Resume /> 
-     <Skills />
+     <Skills /> 
      <Projects />
+     <Testimonials />
     </div>
   );
 }
