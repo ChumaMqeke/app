@@ -1,0 +1,73 @@
+.contacts-page {
+    margin: 0;
+    height: 100vh;
+}
+
+.contacts-container {
+    border: 5px solid;
+    padding: 20px;
+    margin: 100px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-left {
+    border: 5px solid;
+    width: 400px;
+}
+
+.contacts-right {
+    border: 5px solid;
+    width: 500px;
+    padding: 5px;
+}
+.contacts-icons {
+    border: 5px solid;
+    padding: 10px;
+}
+
+.contacts-picture {
+    border: 5px solid;
+    height: 90%;
+}
+
+.footer {
+    border: 5px solid;
+    height: 150px;
+    margin-top: 150px;
+}
+
+.your-name {
+    border: 5px solid; 
+    padding: 5px;
+}
+
+.your-email {
+    border: 5px solid; 
+    padding: 10px;
+}
+
+.your-message {
+    border: 5px solid; 
+    padding: 20px;
+}
+
+.send-button {
+    border: 5px solid; 
+    margin-top: 10px;
+}
+
+.contacts-title {
+    border: 5px solid;
+}
+
+.footer-icons {
+   border: 5px solid;
+   padding: 5px;
+}
+
+.copyrights {
+    border: 5px solid;
+    padding: 5px;
+}
