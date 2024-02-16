@@ -1,73 +1,200 @@
 .contacts-page {
     margin: 0;
-    height: 100vh;
+   height: 100vh;
+}
+
+#contact-me {
+    margin-left: 550px;
+    margin-top: 20px;
 }
 
 .contacts-container {
-    border: 5px solid;
-    padding: 20px;
+    /* border: 5px solid; */
+    padding: 50px;
+    padding-top: 0px;
     margin: 100px;
     height: 450px;
     display: flex;
     justify-content: space-between;
+    background-color: rgba(36, 35, 62, 1);
+    border-radius: 25.62px;
 }
 
 .contacts-left {
-    border: 5px solid;
+    /* border: 5px solid; */
     width: 400px;
 }
 
 .contacts-right {
-    border: 5px solid;
+    /* border: 5px solid; */
     width: 500px;
     padding: 5px;
+    padding-top: 20px;
+   
 }
 .contacts-icons {
-    border: 5px solid;
-    padding: 10px;
+    /* border: 5px solid; */
+    padding: 1px;
+    margin-bottom: 30px;
 }
 
 .contacts-picture {
-    border: 5px solid;
-    height: 90%;
+    /* border: 5px solid; */
+    height: 80%;
+    background-image: linear-gradient(rgba(217, 217, 217, 1) 35%,rgba(36, 35, 62, 1));
+    margin-top: -20px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    
+}
+
+.picture-text {
+    /* border: 3px solid; */
+    /* height: 100px;
+    width: 100px; */
+    padding: 5px;
+    color: rgba(36, 35, 62, 1);
 }
 
 .footer {
-    border: 5px solid;
-    height: 150px;
-    margin-top: 150px;
+    /* border: 5px solid; */
+    height: 120px;
+    margin-top: 140px;
+    padding-left: 550px;
+    background-color: rgba(36, 35, 62, 1);
+}
+
+.icons-in-footer i{
+  padding: 10px;
+  font-size: 25px;
+  color: rgba(217, 217, 217, 1);
+}
+
+.icons-in-footer i:hover {
+    padding: 10px;
+    font-size: 25px;
+    color: rgb(255, 104, 3);
+    transition: 0.6s ease-in-out;
+  }
+
+.copyrights {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 13px;
+    margin-left: -86px;
+    color: rgba(217, 217, 217, 1);
 }
 
 .your-name {
-    border: 5px solid; 
-    padding: 5px;
+    /* border: 5px solid;  */
+    padding: 15px;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 12.81px;
+    margin-top: 20px;
 }
 
 .your-email {
-    border: 5px solid; 
-    padding: 10px;
+    /* border: 5px solid;  */
+    padding: 25px;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 12.81px;
 }
 
 .your-message {
-    border: 5px solid; 
-    padding: 20px;
+    /* border: 5px solid;  */
+    padding: 45px;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 12.81px;
 }
 
 .send-button {
-    border: 5px solid; 
+    /* border: 5px solid;  */
     margin-top: 10px;
+    /* background-color: rgba(255, 124, 3, 1); */
+}
+
+.form-button button {
+  padding: 7px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+}
+
+.form-button button:hover {
+  background-color: rgba(217, 217, 217, 1); 
+  color: rgba(255, 124, 3, 1); 
+  border-color: rgba(217, 217, 217, 1); 
 }
 
 .contacts-title {
-    border: 5px solid;
+    /* border: 5px solid; */
 }
 
 .footer-icons {
-   border: 5px solid;
+   /* border: 5px solid; */
    padding: 5px;
+   margin-bottom: 0;
 }
 
 .copyrights {
-    border: 5px solid;
+    /* border: 5px solid; */
     padding: 5px;
+}
+
+
+.icons-form {
+    display: flex;
+    gap: 30px; 
+    margin-top: 30px; 
+  }
+  
+  .icons-form i {
+    font-size: 25px; 
+    color: rgba(217, 217, 217, 1);
+    transition: color 0.3s ease, transform 0.3s ease; 
+  }
+  
+  .icons-form i:hover {
+    color: rgba(255, 124, 3, 1); 
+    transform: scale(1.1); 
+  }
+
+  #form-text {
+    color: rgba(255, 124, 3, 1);
+    margin-top: 20px;
+  }
+  
+
+  #in-touch-text {
+    text-shadow: -1px 10px 2px;
+    
+}
+
+
+
+  #touch {
+    font-weight: 600;
+    animation: zoomInOut 0.6s infinite alternate;
+    font-size: 20px;
+    margin-top: -200px;
+    margin-left: 220px;
+  }
+
+  @keyframes zoomInOut {
+    0% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+
+.telephone-image{
+    margin-left: 60px;
+    margin-top: 80px;
+   
 }
