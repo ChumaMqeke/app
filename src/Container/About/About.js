@@ -6,9 +6,9 @@ export default function About() {
   return (
     <div className='about-page'>
       <div className='about-container'>
-      <div class="spinner">
-    <div class="spinner1"> ,</div>
-</div>
+      {/* <div class="spinner"> */}
+    {/* <div class="spinner1"> ,</div> */}
+
         <div className='left-box'>
         <div className='highlight-box'>
               <ul className='highlight-text'>

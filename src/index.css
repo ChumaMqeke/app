@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media screen and (max-width: 769px) {
+  body {
+    font-size: 14px; /* Adjust the font size for smaller screens */
+  }
+
+  /* Add more responsive styles as needed */
+}

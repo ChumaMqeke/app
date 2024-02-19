@@ -121,10 +121,22 @@ p {
   }
 
   .button-container {
-    flex-direction: column; 
+    padding: 30px; 
     margin-top: 20px; 
+    justify-content: space-between;
   }
   .button {
     margin-right: 0; 
   }
+
+  .icons {
+    flex-direction: row; 
+    align-items: center;
+    align-self: center;
+  }
+
+  .icons i {
+    margin-top: 10px; /* Adjust as needed for spacing between icons on smaller screens */
+  }
+
 }

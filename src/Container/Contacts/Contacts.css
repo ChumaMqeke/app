@@ -85,33 +85,6 @@
     color: rgba(217, 217, 217, 1);
 }
 
-.your-name {
-    /* border: 5px solid;  */
-    padding: 15px;
-    background-color: rgba(217, 217, 217, 1);
-    border-radius: 12.81px;
-    margin-top: 20px;
-}
-
-.your-email {
-    /* border: 5px solid;  */
-    padding: 25px;
-    background-color: rgba(217, 217, 217, 1);
-    border-radius: 12.81px;
-}
-
-.your-message {
-    /* border: 5px solid;  */
-    padding: 45px;
-    background-color: rgba(217, 217, 217, 1);
-    border-radius: 12.81px;
-}
-
-.send-button {
-    /* border: 5px solid;  */
-    margin-top: 10px;
-    /* background-color: rgba(255, 124, 3, 1); */
-}
 
 .form-button button {
   padding: 7px 20px;
@@ -197,4 +170,26 @@
     margin-left: 60px;
     margin-top: 80px;
    
+}
+
+
+.your-name input,
+.your-email input,
+.your-message textarea {
+    padding: 10px;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 12.81px;
+    margin-top: 20px;
+    border: none; 
+    width: 100%;
+}
+
+.your-email input {
+   
+    height: 40px;
+}
+
+.your-message textarea {
+   
+    height: 90px;
 }

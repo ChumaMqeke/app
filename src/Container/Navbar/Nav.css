@@ -170,8 +170,9 @@ nav {
       transform: translateY(-50%);
       left: 10px;
       color: rgba(255, 124, 3, 1);
-      width: 10px;
-      height: 10px;
+      width: 5px;
+      height: 5px;
+      font-size: 10px;
     }
     
     input {
