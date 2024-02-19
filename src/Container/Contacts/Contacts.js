@@ -1,97 +1,83 @@
-
 import React, { useState } from 'react';
 import './Contacts.css'
 import Telephone from './images/telephone.svg'
 
 
+const Contacts = () => {
 
-  const Contacts = () => {
-    const [status, setStatus] = useState();
+  //   const [user, setUser] = useState({
+  //     FullName: '',
+  //     Email: '',
+  //     Message: ''
+  // });
+//   const handleInputChange = (e) => {
+//     const { name, value } = e.target;
+//     setUser({ ...user, [name]: value });
+// }
+
+// const handleCaptchaChange = (response) => {
+//   // Assuming 'response' is the captcha response token
+//   // Validate the captcha response
+//   if (isValidCaptcha(response)) {
+//       // Captcha validation passed, proceed with further actions
+//       console.log("Captcha validation passed. Proceeding with further actions.");
+//       // Add your logic here
+//   } else {
+//       // Captcha validation failed
+//       console.error("Captcha validation failed. Please try again.");
+//       // Handle failure case or prompt the user to try again
+//   }
+// }
     
-    const [user, setUser] = useState({
-      FullName: '',
-      Email: '',
-      Message: ''
-    });
-    const storeMessageInFirebase = async (messageData) => {
-      const firebaseOptions = {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(messageData)
-      };
-    
-      try {
-        const response = await fetch('https://react-form-bfafe-default-rtdb.firebaseio.com/', firebaseOptions);
-        if (response.ok) {
-          return true;
-        } else {
-          throw new Error('Error storing message in Firebase');
-        }
-      } catch (error) {
-        console.error('Error storing message in Firebase:', error);
-        return false;
-      }
-    };
-    
-    const sendEmailWithHeroTofu = async (messageData) => {
-      const heroTofuOptions = {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(messageData)
-      };
-    
-      try {
-        const response = await fetch( heroTofuOptions);
-        if (response.ok) {
-          return true;
-        } else {
-          throw new Error('Error sending email with HeroTofu');
-        }
-      } catch (error) {
-        console.error('Error sending email with HeroTofu:', error);
-        return false;
-      }
-    };
-    
-    const handleSubmit = async (event) => {
-      event.preventDefault();
-    
-      const messageData = {
-        FullName: user.FullName,
-        Email: user.Email,
-        Message: user.Message
-      };
-    
-      try {
-        const [firebaseRes, heroTofuRes] = await Promise.all([
-          storeMessageInFirebase(messageData),
-          sendEmailWithHeroTofu(messageData)
-        ]);
-    
-        if (firebaseRes && heroTofuRes) {
-          alert('Message Stored and Email Sent');
-        } else {
-          throw new Error('Error Occurred');
-        }
-    
-        // Clear form
-        setUser({
-          FullName: '',
-          Email: '',
-          Message: ''
-        });
-      } catch (error) {
-        console.error('Error occurred:', error);
-        alert('Error Occurred');
-      }
-    };
+// const isValidCaptcha = (response) => {
+//   // You can implement your captcha validation logic here
+//   // For now, return true to simulate a successful validation
+//   return true;
+// }
+
+// const isFormValid = () => {
+//   return user.FullName.trim() !== '' && user.Email.trim() !== '' && user.Message.trim() !== '';
+// }
+// const getData = async (e) => {
+//   e.preventDefault();
+
+//   if (!isFormValid()) {
+//       toast.error('Please fill in all fields');
+//       return;
+//   }
+
+//   const { FullName, Email, Message } = user;
+
+//   try {
+//       await emailjs.sendForm('service_zv9hn9a', 'template_2oo3qwi', e.target, 'wSaoVe3DwwbqMEtrt');
+//       console.log("Email sent successfully");
+
+//       const options = {
+//           method: 'POST',
+//           headers: {
+//               'Content-Type': 'application/json'
+//           },
+//           body: JSON.stringify({
+//               FullName, Email, Message
+//           })
+//       };
+
+//       const res = await fetch('https://contact-form-37435-default-rtdb.firebaseio.com/UserData.json', options);
+//       if (res.ok) {
+//           toast.success('Message Sent Successfully');
+//           setUser({ FullName: '', Email: '', Message: '' }); // Clear form fields on success
+//       } else {
+//           throw new Error('Error Occurred');
+//       }
+//   } catch (error) {
+//       console.error(error);
+//       toast.error('Error Occurred');
+//   }
+// }
+  
 
   return (
-    <div className='contacts-page'>
+    <div className='contacts-page' >
         <div className='contacts-title'>
         <h2 id='contact-me'>Contact <span className='text-style'>Me </span><span className='about-line' id='in-touch-text'></span></h2>
         </div> 
@@ -133,36 +119,36 @@ import Telephone from './images/telephone.svg'
         </div> */}
 
 
-<form className='contacts-right' 
-      onSubmit={handleSubmit}
+  <form className='contacts-right' 
+      
       method="POST">
     <div>
         <h6 id='form-text'>Your Name:</h6>
         <div className='your-name'>
-            <input type='text'  name="FullName" value={user.FullName} />  {/* // onChange={handleChange} */}
+            <input type='text'  name="FullName"  />  {/* // onChange={handleChange} */}
         </div>
     </div>
 
     <div>
         <h6 id='form-text'>Your Email Address:</h6>
         <div className='your-email'>
-            <input type='email'  name="Email"  value={user.Email} />    {/* // onChange={handleChange} */}
+            <input type='email'  name="Email"   />    {/* // onChange={handleChange} */}
         </div>
     </div>
 
     <div>
         <h6 id='form-text'>Your Message:</h6>
         <div className='your-message'>
-            <textarea  name="Message"  value={user.Message}></textarea>    {/* // onChange={handleChange} */}
+            <textarea  name="Message" ></textarea>    {/* // onChange={handleChange} */}
         </div>
     </div>
 
     <div className='send-button'>
         <div className="form-button">
-            <button  type="submit">Send</button>
+            <button type='submit'>Send</button>
         </div>
     </div>
-</form>
+ </form>
 
 
       </div>
@@ -182,6 +168,6 @@ import Telephone from './images/telephone.svg'
       </div>
     </div>
   )
-}
+}; 
 
 export default Contacts;
