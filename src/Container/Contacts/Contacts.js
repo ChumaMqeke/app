@@ -1,80 +1,63 @@
 import React, { useState } from 'react';
+import { toast } from "react-toastify";
+import emailjs from 'emailjs-com';
 import './Contacts.css'
 import Telephone from './images/telephone.svg'
 
 
 const Contacts = () => {
 
-  //   const [user, setUser] = useState({
-  //     FullName: '',
-  //     Email: '',
-  //     Message: ''
-  // });
-//   const handleInputChange = (e) => {
-//     const { name, value } = e.target;
-//     setUser({ ...user, [name]: value });
-// }
+    const [user, setUser] = useState({
+      FullName: '',
+      Email: '',
+      Message: ''
+  });
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setUser({ ...user, [name]: value });
+}
 
-// const handleCaptchaChange = (response) => {
-//   // Assuming 'response' is the captcha response token
-//   // Validate the captcha response
-//   if (isValidCaptcha(response)) {
-//       // Captcha validation passed, proceed with further actions
-//       console.log("Captcha validation passed. Proceeding with further actions.");
-//       // Add your logic here
-//   } else {
-//       // Captcha validation failed
-//       console.error("Captcha validation failed. Please try again.");
-//       // Handle failure case or prompt the user to try again
-//   }
-// }
-    
-// const isValidCaptcha = (response) => {
-//   // You can implement your captcha validation logic here
-//   // For now, return true to simulate a successful validation
-//   return true;
-// }
 
-// const isFormValid = () => {
-//   return user.FullName.trim() !== '' && user.Email.trim() !== '' && user.Message.trim() !== '';
-// }
-// const getData = async (e) => {
-//   e.preventDefault();
+const isFormValid = () => {
+    return user.FullName.trim() !== '' && user.Email.trim() !== '' && user.Message.trim() !== '';
+}
 
-//   if (!isFormValid()) {
-//       toast.error('Please fill in all fields');
-//       return;
-//   }
+const getData = async (e) => {
+    e.preventDefault();
 
-//   const { FullName, Email, Message } = user;
+    if (!isFormValid()) {
+        toast.error('Please fill in all fields');
+        return;
+    }
 
-//   try {
-//       await emailjs.sendForm('service_zv9hn9a', 'template_2oo3qwi', e.target, 'wSaoVe3DwwbqMEtrt');
-//       console.log("Email sent successfully");
+    const { FullName, Email, Message } = user;
 
-//       const options = {
-//           method: 'POST',
-//           headers: {
-//               'Content-Type': 'application/json'
-//           },
-//           body: JSON.stringify({
-//               FullName, Email, Message
-//           })
-//       };
+    try {
+        await emailjs.sendForm('service_zv9hn9a', 'template_2oo3qwi', e.target, 'wSaoVe3DwwbqMEtrt');
+        console.log("Email sent successfully");
 
-//       const res = await fetch('https://contact-form-37435-default-rtdb.firebaseio.com/UserData.json', options);
-//       if (res.ok) {
-//           toast.success('Message Sent Successfully');
-//           setUser({ FullName: '', Email: '', Message: '' }); // Clear form fields on success
-//       } else {
-//           throw new Error('Error Occurred');
-//       }
-//   } catch (error) {
-//       console.error(error);
-//       toast.error('Error Occurred');
-//   }
-// }
-  
+        const options = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                FullName, Email, Message
+            })
+        };
+
+        const res = await fetch('https://react-email-10666-default-rtdb.firebaseio.com//UserData.json', options); 
+        if (res.ok) {
+            toast.success('Message Sent Successfully');
+            setUser({ FullName: '', Email: '', Message: '' }); // Clear form fields on success
+        } else {
+            throw new Error('Error Occurred');
+        }
+    } catch (error) {
+        console.error(error);
+        toast.error('Error Occurred');
+    }
+}
 
   return (
     <div className='contacts-page' >
@@ -119,27 +102,27 @@ const Contacts = () => {
         </div> */}
 
 
-  <form className='contacts-right' 
+  <form className='contacts-right' onSubmit={getData}
       
       method="POST">
     <div>
         <h6 id='form-text'>Your Name:</h6>
         <div className='your-name'>
-            <input type='text'  name="FullName"  />  {/* // onChange={handleChange} */}
+            <input type='text'  name="FullName"  placeholder="Name"  value={user.FullName}  onChange={handleInputChange}  />  {/* // onChange={handleChange} */}
         </div>
     </div>
 
     <div>
         <h6 id='form-text'>Your Email Address:</h6>
         <div className='your-email'>
-            <input type='email'  name="Email"   />    {/* // onChange={handleChange} */}
+            <input type='email'  name="Email" placeholder="Email"  value={user.Email}  onChange={handleInputChange} />    {/* // onChange={handleChange} */}
         </div>
     </div>
 
     <div>
         <h6 id='form-text'>Your Message:</h6>
         <div className='your-message'>
-            <textarea  name="Message" ></textarea>    {/* // onChange={handleChange} */}
+            <textarea  name="Message" value={user.Message}  onChange={handleInputChange} ></textarea>    {/* // onChange={handleChange} */}
         </div>
     </div>
 
@@ -169,5 +152,7 @@ const Contacts = () => {
     </div>
   )
 }; 
+
+// service_xed8ry8
 
 export default Contacts;
