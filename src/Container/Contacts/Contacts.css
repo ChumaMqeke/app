@@ -193,3 +193,25 @@
    
     height: 90px;
 }
+
+
+@media screen and (max-width: 769px) {
+  #contact-me,
+  .contacts-title {
+    margin-left: 20px;
+  }
+
+  .contacts-container {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .contacts-left,
+  .contacts-right {
+    width: 100%;
+  }
+
+  .footer {
+    padding-left: 20px;
+  }
+}

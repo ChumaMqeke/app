@@ -158,4 +158,26 @@
   }
 
 
-   
+  @media screen and (max-width: 769px) {
+    .testimonials-page {
+      height: auto;
+    }
+  
+    .testimonials-title {
+      margin-left: 20px;
+    }
+  
+    .testimonial {
+      margin: 20px auto;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .testimonial .card {
+      width: 100%;
+      margin: 0 auto 20px;
+    }
+  
+    .icons-test {
+      margin-left: 20px;
+    }
+  }

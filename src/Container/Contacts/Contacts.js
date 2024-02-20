@@ -84,23 +84,7 @@ const getData = async (e) => {
             </div>
         </div>
 
-        {/* <div className='contacts-right'>
-            <h6 id='form-text'>Your Name:</h6>
-          <div className='your-name'></div>
-            <h6 id='form-text'>Your Email Address:</h6>
-          <div className='your-email'></div>
-            <h6 id='form-text'>Your Message:</h6>
-          <div className='your-message'></div>
-            
-          <div className='send-button'>
-
-          <div className="form-button">
-                 <button>Send</button>
-              </div> 
-             
-          </div>
-        </div> */}
-
+       
 
   <form className='contacts-right' onSubmit={getData}
       
