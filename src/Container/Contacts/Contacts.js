@@ -33,7 +33,7 @@ const getData = async (e) => {
     const { FullName, Email, Message } = user;
 
     try {
-        await emailjs.sendForm('service_zv9hn9a', 'template_2oo3qwi', e.target, 'wSaoVe3DwwbqMEtrt');
+        await emailjs.sendForm('service_ggy6xvg', 'template_tk5c2sa', e.target, 'rN0OSt-EKYxnSsyGU');
         console.log("Email sent successfully");
 
         const options = {
@@ -48,14 +48,14 @@ const getData = async (e) => {
 
         const res = await fetch('https://react-email-10666-default-rtdb.firebaseio.com//UserData.json', options); 
         if (res.ok) {
-            toast.success('Message Sent Successfully');
+            alert('Message Sent Successfully');
             setUser({ FullName: '', Email: '', Message: '' }); // Clear form fields on success
         } else {
             throw new Error('Error Occurred');
         }
     } catch (error) {
         console.error(error);
-        toast.error('Error Occurred');
+        alert('Error Occurred');
     }
 }
 
