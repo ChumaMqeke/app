@@ -11,10 +11,30 @@ class Navbar extends Component {
     this.setState({ clicked: !this.state.clicked });
   };
 
+  state = { clicked: false, isSticky: false };
+
+  handleClick = () => {
+    this.setState({ clicked: !this.state.clicked });
+  };
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = () => {
+    const scrollY = window.scrollY;
+    const isSticky = scrollY > 0; // Adjust the threshold as needed
+    this.setState({ isSticky });
+  };
+
   render() {
     return (
       <div>
-        <nav>
+        <nav className={this.state.isSticky ? 'sticky' : ''}>
           <img src={myImage} alt="Description of the image" />
 
           <div className="container">

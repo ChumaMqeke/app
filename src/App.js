@@ -8,6 +8,8 @@ import Skills from "./Container/Skills/Skills";
 import Projects from "./Container/Projects/Projects";
 import Testimonials from "./Container/Testimonials/Testimonials";
 import Contacts from "./Container/Contacts/Contacts";
+import "./App.css"
+
 
 function App() {
   return (
