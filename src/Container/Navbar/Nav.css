@@ -13,7 +13,7 @@ nav {
 .sticky {
    position: fixed;
    top: 0;
-   width: 90%;
+   width: 100%;
    background: rgba(36, 35, 62, 1);
    box-shadow: 0 5px 15px;
    z-index: 1000;
@@ -25,17 +25,21 @@ nav {
    display: flex;
    align-items: center;
    justify-content: center;
+   margin-left: 200px;
 }
+
+
 
 #navbar li {
    list-style: none;
-   padding: 0 20px;
+   padding: 0 25px;
    position: relative;
+   
 }
 
 #navbar li a {
    text-decoration: none;
-   font-size: 1.3rem;
+   font-size: 1.1rem;
    font-weight: 600;
    color: #fff;
    transition: 0.3s ease-in-out;

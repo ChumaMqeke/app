@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 .skills-container {
@@ -15,19 +14,21 @@
 
 .rows {
   display: flex;
+  flex-wrap: wrap; /* Added to wrap rows on smaller screens */
   justify-content: space-between;
   gap: 20px;
 }
 
 .square {
   box-shadow: 5px 5px 10px rgb(107, 106, 106);
-  width: 100%;
-  padding: 20px;
+  width: calc(50% - 20px); /* Adjusted width for responsiveness */
+  padding: 50px;
   background-color: rgba(217, 217, 217, 1);
   box-shadow: 10px 10px rgba(255, 124, 3, 1);
   border-left: 2px solid rgb(129, 128, 128);
   border-top: 2px solid rgb(129, 128, 128);
   margin-top: 20px;
+  box-sizing: border-box; /* Added to include padding in width calculation */
 }
 
 .square:hover {

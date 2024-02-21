@@ -12,7 +12,7 @@ export default function Skills() {
         <div className='rows'>
           <div className='square'>
             <div id="cont">
-              <div id="box"><i className="fa-brands fa-html5"></i></div>
+              <div id="box"><i className="fa-brands fa-html5">HTML5</i></div>
             </div>
             <div className="progress-bar-container">
               <div className="progress-bar" style={{ width: '80%' }}>
@@ -23,7 +23,7 @@ export default function Skills() {
 
           <div className='square'>
             <div id="cont">
-              <div id="box"><i className="fa-brands fa-css3"></i></div>
+              <div id="box"><i className="fa-brands fa-css3">    CSS</i></div>
             </div>
             <div className="progress-bar-container">
               <div className="progress-bar" style={{ width: '90%' }}>
@@ -36,7 +36,7 @@ export default function Skills() {
         <div className='rows'>
           <div className='square'>
             <div id="cont">
-              <div id="box"><i className="fa-brands fa-js"></i></div>
+              <div id="box"><i className="fa-brands fa-js">    JAVASCRIPT</i></div>
             </div>
             <div className="progress-bar-container">
               <div className="progress-bar" style={{ width: '75%' }}>
@@ -47,7 +47,7 @@ export default function Skills() {
 
           <div className='square'>
             <div id="cont">
-              <div id="box"><i className="fa-brands fa-react"></i></div>
+              <div id="box"><i className="fa-brands fa-react">   REACT JS</i></div>
             </div>
             <div className="progress-bar-container">
               <div className="progress-bar" style={{ width: '60%' }}>
@@ -60,7 +60,7 @@ export default function Skills() {
         <div className='rows'>
           <div className='square'>
             <div id="cont">
-              <div id="box"><i className="fa-brands fa-java"></i></div>
+              <div id="box"><i className="fa-brands fa-java">   JAVA</i></div>
             </div>
             <div className="progress-bar-container">
               <div className="progress-bar" style={{ width: '50%' }}>
@@ -71,7 +71,7 @@ export default function Skills() {
 
           <div className='square'>
             <div id="cont">
-              <div id="box"><i className="fa-brands fa-python"></i></div>
+              <div id="box"><i className="fa-brands fa-python">   PYTHON</i></div>
             </div>
             <div className="progress-bar-container">
               <div className="progress-bar" style={{ width: '50%' }}>

@@ -4,6 +4,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  
 }
 
 .profile-section {
@@ -19,16 +20,18 @@
 
 .about-container {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
 }
 
-.left-box {
+.leftBox {
   background-color: rgba(36, 35, 62, 1);
   padding: 20px;
   color: white;
   box-shadow: 3px 5px 18px 0px rgba(255, 124, 3, 1);
+  width: 100%;
 }
 
 .text-style {
@@ -37,11 +40,11 @@
 
 .about-text {
   margin-bottom: 20px;
+  margin-left: 500px;
 }
 
 .rectangle-box {
   width: 100%;
-  height: auto;
   background: linear-gradient(
     to right,
     rgba(255, 124, 3, 1),
@@ -96,18 +99,18 @@
   left: 0;
 }
 
+.text1 {
+  color: rgba(241, 239, 239, 1)
+}
+
 /* Mobile Styles */
 @media screen and (max-width: 769px) {
-  .about-container {
-    align-items: center;
-  }
-
-  .left-box {
+  .leftBox {
     padding: 10px;
   }
 
   .profile-picture {
-    max-width: 100%; /* Adjust max-width for responsiveness */
+    max-width: 100%;
   }
 
   .rectangle-box {
@@ -119,97 +122,9 @@
   .highlight-text {
     padding: 10px;
   }
+
+  .about-text {
+    margin-bottom: 20px;
+    margin-left: 110px;
+  }
 }
-
-
-  /* .spinner {
-    background-image: linear-gradient(rgba(255, 124, 3, 1) 35%,rgba(36, 35, 62, 1));
-    width: 200px;
-    height: 200px;
-    animation: spinning82341 1.7s linear infinite;
-    text-align: center;
-    border-radius: 50%;
-    filter: blur(1px);
-    box-shadow: 0px -5px 20px 0px rgba(255, 124, 3, 1), 0px 5px 20px 0px rgba(36, 35, 62, 1);
-    margin-top: 400px;
-    margin-right: 50px;
-  }
-  
-  .spinner1 {
-    background-color: white;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    
-  }
-  
-  @keyframes spinning82341 {
-    to {
-      transform: rotate(360deg);
-    }
-  }
-    
-   */
-
-
-  /* @media screen and (max-width: 769px) {
-    .about-container {
-      align-items: center;
-      position: relative;
-      justify-content: center;
-      display: flex;
-      flex-direction: column; 
-      flex-direction: column;
-    flex-direction: column-reverse;
-    }
-  
-    .left-box {
-      padding: 10px;
-      width: 100%;
-      margin: 0;
-      margin-top: 60%;
-      height: 1300px;
-    }
-  
-    .about-text {
-      text-align: center;
-      margin: 0;
-      align-self: center;
-    }
-  
-    .highlight-box {
-       
-      width: 100%;
-      justify-content: center;
-      margin: 0;
-      height: 500px;
-
-    }
-  
-    .rectangle-box {
-      display: grid;
-      flex-direction: column;
-      align-items: center; 
-      width: 50%; 
-      margin: 0;
-      margin-left: 600px;
-      margin-top: -600px;
-      text-align: center;
-    }
-  
-    .top-text img {
-      flex-direction: column;
-      flex-direction: column-reverse;
-    }
-  
-    .text {
-      padding-left: 5px; 
-      text-align: center;
-      margin: 10px;
-      width:300px;
-      margin-left: -70px;
-      flex-direction: column;
-    flex-direction: column-reverse;
-    }
-  }
-   */

@@ -1,3 +1,7 @@
+.Testimonial {
+    height: 100vh;
+}
+
 .Testimonial h2 {
     margin: 15px 0 0 0;
   }
@@ -58,6 +62,7 @@
   article.activeSlide {
     opacity: 1;
     transform: translateX(0);
+    
   }
   article.lastSlide {
     transform: translateX(-100%);

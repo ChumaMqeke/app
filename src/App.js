@@ -6,7 +6,7 @@ import About from "./Container/About/About";
 import Resume from "./Container/Resume/Resume";
 import Skills from "./Container/Skills/Skills";
 import Projects from "./Container/Projects/Projects";
-import Testimonials from "./Container/Testimonials/Testimonials";
+import Testimonial from "./Container/Testimonials/Testimonial";
 import Contacts from "./Container/Contacts/Contacts";
 import "./App.css"
 
@@ -20,7 +20,7 @@ function App() {
      <Resume /> 
      <Skills /> 
      <Projects />
-     <Testimonials />
+     <Testimonial />
      <Contacts />
     </div>
   );

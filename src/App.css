@@ -11,9 +11,10 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #ecf0f3;
 }
-.container {
-  max-width: 95%;
+.contain {
+  max-width: 100%;
   margin: auto;
+  
 }
 .d_flex {
   display: flex;
@@ -24,7 +25,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(233, 226, 226);
 }
 li {
   list-style: none;
@@ -51,18 +52,19 @@ button {
   transition: 0.5s;
 }
 .btn_shadow {
-  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  background: linear-gradient(145deg, rgba(255, 124, 3, 1), rgb(250, 147, 50));
   box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
 }
 .btn_shadow:hover {
-  background: #ff014f;
+  background: rgba(36, 35, 62, 1);
   color: white;
   transform: translateY(-10px);
 }
 .box_shodow {
-  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  background: linear-gradient(145deg, rgba(255, 124, 3, 1), rgb(241, 180, 122));
   box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
   border-radius: 10px;
+  height: 300px;
 }
 .row,
 .left,
@@ -79,12 +81,12 @@ button {
   margin: 50px 0 50px 0;
 }
 .heading h4 {
-  color: #ff014f;
+  color: rgba(255, 124, 3, 1);
   letter-spacing: 2px;
   font-weight: 400;
 }
 .heading h1 {
-  font-size: 60px;
+  font-size: 40px;
   color: #3c3e41;
 }
 h1 {
@@ -102,17 +104,9 @@ p {
   text-align: center;
 }
 .primary_color {
-  color: #ff014f;
+  color: #e2e8ec;
 }
-textarea,
-input {
-  width: 100%;
-  padding: 20px;
-  border-radius: 5px;
-  outline: none;
-  border: 3px solid #e2e8ec;
-  margin-bottom: 20px;
-}
+|
 /*----------Footer---------*/
 footer {
   margin: 20% 0 10% 0;
