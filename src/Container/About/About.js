@@ -42,6 +42,20 @@ export default function About() {
                  Passionate Problem Solver
                 </p>
               </ul>
+
+              <div className='animation'>
+                
+              <div class="loop cubes">
+    <div class="item cubes"></div>
+    <div class="item cubes"></div>
+    <div class="item cubes"></div>
+    <div class="item cubes"></div>
+    <div class="item cubes"></div>
+    <div class="item cubes"></div>
+</div>
+                
+                </div>
+
             </div>
 
         </div>
