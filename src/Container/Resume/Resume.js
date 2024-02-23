@@ -105,25 +105,32 @@ function Resume() {
           {selectedContent === 'experience' && (
             <div className="experience-content">
               <h5>My Experience</h5>
-              <p className="">
-                I am a junior software developer with a focus on front-end and back-end development,
-                dedicated to creating seamless and engaging user interfaces. Passionate about
-                transforming ideas into functional, user-friendly experiences, I bring creativity
-                and precision to every project. Let's collaborate and build innovative solutions
-                together!
-              </p>
+              <h6 id='job-title'>full-stack developer intern</h6>
+              <p id='small-size'>UVU Africa (Capacity Tech Career Accelerator )</p>
+              <ul id='list-text'>
+                <li>Web Development using HTML CSS and JavaScript. </li>
+                <li>Manage and track changes in codebase using version control - Git </li>
+                <li>Work with server-side languages (Node.js) to develop server-side logic. </li>
+                <li>Develop RESTful APIs to facilitate communication between front-end and back-end. </li>
+                <li>Development of applications using Java and Python. </li>
+                <li>Design and implement database structure using SQL and PostgresSQL for efficient data storage and retrieval. </li>
+              </ul>
             </div>
           )}
           {selectedContent === 'skills' && (
             <div className="skills-content">
-              <h5>Skills</h5>
-              <p className="">
-                I am a junior software developer with a focus on front-end and back-end development,
-                dedicated to creating seamless and engaging user interfaces. Passionate about
-                transforming ideas into functional, user-friendly experiences, I bring creativity
-                and precision to every project. Let's collaborate and build innovative solutions
-                together!
-              </p>
+               <h5 id='skil'>Skills</h5>
+              <ul id='list-text'>
+                <li>HTML and CSS</li>
+                <li>JavaScript</li>
+                <li>React js </li>
+                <li>SQL</li>
+                <li>Python </li>
+                <li>Figma UI/UX</li>
+                <li>Problem-Solving</li>
+                <li>Technical skills</li>
+                <li>Communication skills</li>
+              </ul>
             </div>
           )}
           {selectedContent === 'education' && (

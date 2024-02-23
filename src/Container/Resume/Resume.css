@@ -125,7 +125,25 @@
     margin-left: 600px;
   }
 
+  #job-title {
+    color: rgba(255, 124, 3, 1);
+  }
 
+#small-size {
+  font-size: 10px;
+}
+
+#list-text {
+  font-size: 10px;
+  font-weight: bold;
+  
+}
+
+#skil {
+  font-size: 15px;
+  padding-bottom: 20px;
+  color: rgba(255, 124, 3, 1);
+}
 
   @media screen and (max-width: 769px) {
   .resume-page {

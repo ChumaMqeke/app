@@ -38,8 +38,14 @@ export default function Projects() {
   ];
   
   return (
-    <div className='projects-page' id='projects'>
-   
+    <div className='projects' id='projects'>
+
+<div className='heading text-center'>
+            <h4>My Works</h4>
+            <h1>Projects</h1>
+          </div>
+    <div className='projects-page' >
+          
         <div className='projects-container'>
         
             <div className='projects-slide'>
@@ -63,6 +69,6 @@ export default function Projects() {
                 <img className='my-side-picture' src={projectsProfile} alt='projects profile picture'></img>
             </div>
         </div>
-       
+        </div> 
   );
 }
