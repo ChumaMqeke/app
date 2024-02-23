@@ -1,11 +1,22 @@
 import React, { useState } from 'react';
 import './Resume.css';
+import cvFile from './resume/Chuma-Mqeke-resume.pdf';
 
 function Resume() {
   const [selectedContent, setSelectedContent] = useState('about-me');
 
   const handleButtonClick = (content) => {
     setSelectedContent(content);
+  };
+
+  const handleGetResumeClick = () => {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = cvFile;
+    downloadLink.download = 'Chuma-Mqeke-resume.pdf'; 
+    downloadLink.style.display = 'none';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
   };
 
   return (
@@ -65,7 +76,7 @@ function Resume() {
             <h5>Contacts</h5>
           </div>
           <div className="download-button">
-            <button>Get Resume</button>
+          <button onClick={handleGetResumeClick}>Get Resume</button>
           </div>
         </div>
         </div>

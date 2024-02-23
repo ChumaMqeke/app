@@ -7,9 +7,8 @@
   padding: 20px;
   height: 100vh;
   margin-bottom: 0;
-  margin-top: 200px;
-  position: relative;
-  z-index: 1;
+  margin-top: 100px;
+ 
 }
 
 .skills-cover {
@@ -67,7 +66,7 @@
 }
 
 .progress-bar {
-  height: 100%;
+  height: 100%;   
   background-color: rgba(36, 35, 62, 1);
   border-radius: 10px;
   position: relative;
@@ -117,5 +116,11 @@
   .square {
     flex-basis: 100%; 
     margin-right: 0; 
+  }
+
+  .skills-container {
+   height: 2000px;
+   position: relative;
+   z-index: 1;
   }
 }

@@ -16,7 +16,7 @@
 }
 
 .projects-container {
-   border: 5px solid;
+   /* border: 5px solid; */
    align-content: center;
    padding: 10px;
    margin-left: 135px;
@@ -26,13 +26,13 @@
 }
 
 .projects-slide{
-    border: 5px solid;
+    /* border: 5px solid; */
     width: 80%;
     
 }
 
 .my-picture {
-    border: 5px solid;
+    /* border: 5px solid; */
     width: 300px;
     background-image: linear-gradient(to bottom, #fff, rgba(36, 35, 62, 1) );
 }

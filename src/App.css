@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+ 
 }
 html {
   scroll-behavior: smooth;
@@ -14,7 +15,7 @@ body {
 .contain {
   max-width: 100%;
   margin: auto;
-  
+  height: 100vh;
 }
 .d_flex {
   display: flex;
@@ -123,4 +124,6 @@ footer p {
   .right {
     width: 100%;
   }
+
+  
 }

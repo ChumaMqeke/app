@@ -1,8 +1,9 @@
 import React from 'react';
 import figmaProfile from './images/figmaProfile.png';
 import './Profile.css';
+import cvFile from './resume/Chuma-Mqeke-resume.pdf';
 
-export default function Profile() {
+const Profile = () => {
   const handleHireMeClick = () => {
     const contactSection = document.getElementById('contacts');
     if (contactSection) {
@@ -10,11 +11,21 @@ export default function Profile() {
     }
   };
 
+  const handleGetResumeClick = () => {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = cvFile;
+    downloadLink.download = 'Chuma-Mqeke-resume.pdf'; 
+    downloadLink.style.display = 'none';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
+
   return (
     <div className='home' id='home'>
       <div className='home-container'>
         <div className='home-content'>
-          <img src={figmaProfile} alt="Description of the image" />
+          <img src={figmaProfile} id='home-profile' alt="Description of the image" />
           <div className="hello-text">
             <h1> Hello!</h1>
             <h3>
@@ -28,7 +39,7 @@ export default function Profile() {
 
             <div className='button-container'>
               <div className="button">
-                <button>Get Resume</button>
+                <button onClick={handleGetResumeClick}>Get Resume</button>
               </div>
               <div className="button-hire">
                 <button onClick={handleHireMeClick}>Hire Me</button>
@@ -36,17 +47,18 @@ export default function Profile() {
             </div>
 
             <div className='icons'>
-              <i className="fa-brands fa-square-facebook"></i>
-              <i className="fa-brands fa-square-instagram"></i>
-              <i className="fa-brands fa-square-whatsapp"></i>
-              <i className="fa-brands fa-linkedin"></i>
+              <i className="fab fa-facebook-square"></i>
+              <i className="fab fa-instagram"></i>
+              <i className="fab fa-whatsapp"></i>
+              <i className="fab fa-linkedin"></i>
             </div>
 
           </div>
-
         </div>
       </div>
       <div className='Line'></div>
     </div>
   );
 }
+
+export default Profile;

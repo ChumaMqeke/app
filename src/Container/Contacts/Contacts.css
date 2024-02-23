@@ -48,6 +48,10 @@
     
 }
 
+.contacts-picture img{
+   
+}
+
 .picture-text {
     /* border: 3px solid; */
     /* height: 100px;
@@ -168,8 +172,8 @@
 
 .telephone-image{
     margin-left: 60px;
-    margin-top: 80px;
-   
+    margin-top: -20px;
+   height: 100%;
 }
 
 

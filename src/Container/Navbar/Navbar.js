@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import myImage from './images/logo.svg';
 import './Nav.css';
+import cvFile from './resume/Chuma-Mqeke-resume.pdf';
 
 class Navbar extends Component {
   state = { clicked: false, isSticky: false };
@@ -23,7 +24,6 @@ class Navbar extends Component {
     this.setState({ isSticky });
   };
 
-
   handleNavLinkClick = (id, event) => {
     event.preventDefault(); // Prevent the default behavior of anchor tag
     const element = document.getElementById(id);
@@ -32,8 +32,16 @@ class Navbar extends Component {
     }
     this.setState({ clicked: false }); // Close the mobile menu after click
   };
-  
 
+  handleGetResumeClick = () => {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = cvFile;
+    downloadLink.download = 'Chuma-Mqeke-resume.pdf'; // Adjust the filename accordingly
+    downloadLink.style.display = 'none';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
   render() {
     return (
       <div>
@@ -45,13 +53,13 @@ class Navbar extends Component {
             </div>
             <ul id="navbar" className={this.state.clicked ? 'navbar active' : 'navbar'}>
               <li><a className='active' onClick={(e) => this.handleNavLinkClick('home', e)} href='#'>Home</a></li>
-<li><a onClick={(e) => this.handleNavLinkClick('about', e)} href='#'>About Me</a></li>
-<li><a onClick={(e) => this.handleNavLinkClick('projects', e)} href='#'>Projects</a></li>
-<li><a onClick={(e) => this.handleNavLinkClick('skills', e)} href='#'>Skills</a></li>
-<li><a onClick={(e) => this.handleNavLinkClick('testimonials', e)} href='#'>Testimonials</a></li>
+              <li><a onClick={(e) => this.handleNavLinkClick('about', e)} href='#'>About Me</a></li>
+              <li><a onClick={(e) => this.handleNavLinkClick('projects', e)} href='#'>Projects</a></li>
+              <li><a onClick={(e) => this.handleNavLinkClick('skills', e)} href='#'>Skills</a></li>
+              <li><a onClick={(e) => this.handleNavLinkClick('testimonials', e)} href='#'>Testimonials</a></li>
 
               <div className="button-header">
-                <button>Get Resume</button>
+                <button onClick={this.handleGetResumeClick}>Get Resume</button>
               </div>
             </ul>
           </div>

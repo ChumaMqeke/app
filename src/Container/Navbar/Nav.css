@@ -8,6 +8,7 @@ nav {
    padding: 00px 60px;
    box-shadow: 0 5px 15px;
    transition: background-color 0.4s ease-in-out;
+   width: 100%;
 }
 
 .sticky {
@@ -139,7 +140,7 @@ nav {
       top: 110px;
       right: -400px; /*Hides the side bar and this is linked to the navbar state*/
       width: 60%  ;
-      height: 100vh;
+      height: 90vh;
       background: rgba(36, 35, 62, 1);
       box-shadow: 0 20px 30px rgb(39, 37, 35);
       padding: 40px 0 0 10px;
@@ -205,6 +206,7 @@ nav {
     #logoImg {
       width: 20%;
       margin-top: 20px;
+      margin: 0;
     }
 }
    

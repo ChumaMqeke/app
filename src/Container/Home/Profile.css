@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-img {
+.home-content img {
   max-width: 100%;
   height: auto;
   margin-right: 50px; 
@@ -118,8 +118,9 @@ p {
     text-align: center;
   }
 
-  img {
+  .home-content img {
     margin-bottom: 20px; 
+    margin-left: 70px;
   }
 
   .button-container {
