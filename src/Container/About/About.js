@@ -29,7 +29,7 @@ export default function About() {
               <ul className='highlight-text'>
                 <h4 className='heading'><span className='about-line'>Few</span> Highlights About <span className='text-style'>Me</span></h4>
                 <p className='text1'>
-                <span>|</span>Proficient in developing dynamic and responsive websites.
+                Proficient in developing dynamic and responsive websites.
                 </p>
                 <p className='text1'>
                 Creates stunning and intuitive user interfaces using Figma.

@@ -21,9 +21,9 @@ function Card({ imagen }) {
       onMouseLeave={() => setShown(false)}
     >
       <img src={imagen} alt="" />
-      <h2>Title</h2>
+      <h2>Project</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+        
       </p>
       <div className={Styles.btnn}>
         <Button text="Demo" />

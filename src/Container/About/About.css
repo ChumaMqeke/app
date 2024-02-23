@@ -113,12 +113,7 @@ margin-top: -200px;
   list-style: none;
 }
 
-/* .highlight-text p::before {
-  content: '|';
-  color: rgba(255, 124, 3, 1);
-  font-size: 1.5em;
-  margin-right: 10px;
-} */
+
 
 .heading {
   color: rgba(241, 239, 239, 1);
