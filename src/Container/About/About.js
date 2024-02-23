@@ -4,7 +4,7 @@ import './About.css';
 
 export default function About() {
   return (
-    <div className='about-page'>
+    <div className='about-page' id='about'>
       <div className='about-container'>
       {/* <div class="spinner"> */}
     {/* <div class="spinner1"> ,</div> */}
@@ -43,16 +43,13 @@ export default function About() {
                 </p>
               </ul>
 
-              <div className='animation'>
+             
                 
               <div class="loop cubes">
     <div class="item cubes"></div>
+  
     <div class="item cubes"></div>
-    <div class="item cubes"></div>
-    <div class="item cubes"></div>
-    <div class="item cubes"></div>
-    <div class="item cubes"></div>
-</div>
+
                 
                 </div>
 

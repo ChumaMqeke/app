@@ -138,7 +138,7 @@ nav {
       position: fixed;
       top: 110px;
       right: -400px; /*Hides the side bar and this is linked to the navbar state*/
-      width: 100%  ;
+      width: 60%  ;
       height: 100vh;
       background: rgba(36, 35, 62, 1);
       box-shadow: 0 20px 30px rgb(39, 37, 35);
@@ -201,6 +201,10 @@ nav {
       width: 10px;
       height: 10px;
     }
-
+  
+    #logoImg {
+      width: 20%;
+      margin-top: 20px;
+    }
 }
    

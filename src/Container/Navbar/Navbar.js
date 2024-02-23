@@ -1,16 +1,8 @@
 import React, { Component } from 'react';
 import myImage from './images/logo.svg';
-import  Nav from './Nav.css';
-
-
+import './Nav.css';
 
 class Navbar extends Component {
-  state = { clicked: false };
-
-  handleClick = () => {
-    this.setState({ clicked: !this.state.clicked });
-  };
-
   state = { clicked: false, isSticky: false };
 
   handleClick = () => {
@@ -31,34 +23,37 @@ class Navbar extends Component {
     this.setState({ isSticky });
   };
 
+
+  handleNavLinkClick = (id, event) => {
+    event.preventDefault(); // Prevent the default behavior of anchor tag
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    this.setState({ clicked: false }); // Close the mobile menu after click
+  };
+  
+
   render() {
     return (
       <div>
         <nav className={this.state.isSticky ? 'sticky' : ''}>
-          <img src={myImage} alt="Description of the image" />
-
+          <img src={myImage} alt="Description of the image" id='logoImg' />
           <div className="container">
             <div id="mobile" onClick={this.handleClick}>
-              <i id="bar" className={this.state.clicked ? "fa fa-times" : "fas fa-bars"}></i>
+              <i id="bar" className={this.state.clicked ? 'fa fa-times' : 'fas fa-bars'}></i>
             </div>
-
-            <ul id="navbar" className={this.state.clicked ? "navbar active" : "navbar"}>
-              <li><a className='active' href='#'>Home</a></li>
-              <li><a href='#'>About Me</a></li>
-              <li><a href='#'>Projects</a></li>
-              <li><a href='#'>Skills</a></li>
-              <li><a href='#'>Tesimonials</a></li>
+            <ul id="navbar" className={this.state.clicked ? 'navbar active' : 'navbar'}>
+              <li><a className='active' onClick={(e) => this.handleNavLinkClick('home', e)} href='#'>Home</a></li>
+<li><a onClick={(e) => this.handleNavLinkClick('about', e)} href='#'>About Me</a></li>
+<li><a onClick={(e) => this.handleNavLinkClick('projects', e)} href='#'>Projects</a></li>
+<li><a onClick={(e) => this.handleNavLinkClick('skills', e)} href='#'>Skills</a></li>
+<li><a onClick={(e) => this.handleNavLinkClick('testimonials', e)} href='#'>Testimonials</a></li>
 
               <div className="button-header">
                 <button>Get Resume</button>
               </div>
             </ul>
-
-            <div className="search-container">
-                <i id="icon" className="fas fa-search"></i>
-                <input type="text" placeholder="" />
-              </div>
-
           </div>
         </nav>
       </div>

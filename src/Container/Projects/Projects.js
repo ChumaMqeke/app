@@ -42,7 +42,7 @@ export default function Projects() {
   ];
   
   return (
-    <div className='projects-page'>
+    <div className='projects-page' id='projects'>
       {/* <div className='projects'>
       <h3 id='project-title'>
         <span className="about-line">chum</span>a<span className="name"> Mqeke</span>

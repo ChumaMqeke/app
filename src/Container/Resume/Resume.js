@@ -9,7 +9,7 @@ function Resume() {
   };
 
   return (
-    <div className="resume-page">
+    <div className="resume-page" id='resume'>
       <div className='resume-cover'>
       
       <div className="resume-page-container">

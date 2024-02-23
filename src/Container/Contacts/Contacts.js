@@ -60,7 +60,7 @@ const getData = async (e) => {
 }
 
   return (
-    <div className='contacts-page' >
+    <div className='contacts-page' id='contacts'>
         <div className='contacts-title'>
         <h2 id='contact-me'>Contact <span className='text-style'>Me </span><span className='about-line' id='in-touch-text'></span></h2>
         </div> 
@@ -92,21 +92,21 @@ const getData = async (e) => {
     <div>
         <h6 id='form-text'>Your Name:</h6>
         <div className='your-name'>
-            <input type='text'  name="FullName"  placeholder="Name"  value={user.FullName}  onChange={handleInputChange}  />  {/* // onChange={handleChange} */}
+            <input type='text'  name="FullName"  placeholder="Name"  value={user.FullName}  onChange={handleInputChange} required />  {/* // onChange={handleChange} */}
         </div>
     </div>
 
     <div>
         <h6 id='form-text'>Your Email Address:</h6>
         <div className='your-email'>
-            <input type='email'  name="Email" placeholder="Email"  value={user.Email}  onChange={handleInputChange} />    {/* // onChange={handleChange} */}
+            <input type='email'  name="Email" placeholder="Email"  value={user.Email}  onChange={handleInputChange} required/>    {/* // onChange={handleChange} */}
         </div>
     </div>
 
     <div>
         <h6 id='form-text'>Your Message:</h6>
         <div className='your-message'>
-            <textarea  name="Message" value={user.Message}  onChange={handleInputChange} ></textarea>    {/* // onChange={handleChange} */}
+            <textarea  name="Message" value={user.Message}  onChange={handleInputChange}required ></textarea>    {/* // onChange={handleChange} */}
         </div>
     </div>
 

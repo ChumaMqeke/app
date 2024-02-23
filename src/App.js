@@ -14,14 +14,14 @@ import "./App.css"
 function App() {
   return (
     <div className="App">
-     <Navbar />
-     <Profile />
-     <About />
-     <Resume /> 
-     <Skills /> 
-     <Projects />
-     <Testimonial />
-     <Contacts />
+      <Navbar />
+      <Profile id="home" />
+      <About id="about" />
+      <Resume id="resume" />
+      <Skills id="skills" />
+      <Projects id="projects" />
+      <Testimonial id="testimonials" />
+      <Contacts id="contacts" />
     </div>
   );
 }

@@ -26,7 +26,7 @@ const Testimonial = () => {
 
   return (
     <>
-      <section className='Testimonial' id='clients'>
+      <section className='Testimonial' id='testimonials'>
         <div className='container'>
           <div className='heading text-center'>
             <h4>WHAT CLIENTS SAY</h4>
