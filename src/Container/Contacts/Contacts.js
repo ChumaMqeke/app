@@ -74,12 +74,20 @@ const Contacts = () => {
       <div className="contacts-container">
         <div className="contacts-left">
           <div className="contacts-icons">
-            <div className="icons-form">
-              <i className="fa-brands fa-square-facebook"></i>
-              <i className="fa-brands fa-square-instagram"></i>
-              <i className="fa-brands fa-square-whatsapp"></i>
-              <i className="fa-brands fa-linkedin"></i>
-            </div>
+          <div className="icons-form">
+        <a href="https://facebook.com/chuma-mqeke" target="_blank" rel="noopener noreferrer">
+          <i className="fa-brands fa-square-facebook"></i>
+        </a>
+        <a href="https://instagram.com/chuma-mqeke" target="_blank" rel="noopener noreferrer">
+          <i className="fa-brands fa-square-instagram"></i>
+        </a>
+        <a href="https://wa.me/0781554750" target="_blank" rel="noopener noreferrer">
+          <i className="fa-brands fa-square-whatsapp"></i>
+        </a>
+        <a href="https://linkedin.com/in/chuma-mqeke" target="_blank" rel="noopener noreferrer">
+          <i className="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
           </div>
 
           <div className="contacts-picture">

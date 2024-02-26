@@ -22,7 +22,10 @@ function Resume() {
   return (
     <div className="resume-page" id='resume'>
       <div className='resume-cover'>
-      
+      <div className='heading text-center'>
+            <h4>My Resume</h4>
+            <h1>Chuma Mqeke</h1>
+          </div>
       <div className="resume-page-container">
     
         <div className='side-bar-container'>
@@ -136,44 +139,77 @@ function Resume() {
           {selectedContent === 'education' && (
             <div className="education-content">
               <h5>Education</h5>
-              <p className="">
-                I am a junior software developer with a focus on front-end and back-end development,
-                dedicated to creating seamless and engaging user interfaces. Passionate about
-                transforming ideas into functional, user-friendly experiences, I bring creativity
-                and precision to every project. Let's collaborate and build innovative solutions
-                together!
-              </p>
+              <h6 id='job-title'>Advance Diploma: ICT in Applications Development</h6>
+              <p id='small-size'>Walter Sisulu University</p>
+              <ul id='list-text'>
+                <li>2021 - 2022</li>
+                
+              </ul>
+              <h6 id='job-title'>National Diploma in Information Technology (Software Development)</h6>
+              <p id='small-size'>Walter Sisulu University</p>
+              <ul id='list-text'>
+                <li>2018 - 2020</li>
+                
+              </ul>
+              <h6 id='job-title'>Metric (National Senior Certificate)</h6>
+              <p id='small-size'>Gwadana Senior Secondary School</p>
+              <ul id='list-text'>
+                <li>2015 - 2017</li>
+                
+              </ul>
             </div>
           )}
           {selectedContent === 'contacts' && (
             <div className="contacts-content">
               <h5>Contacts</h5>
-              <p className="">
-                I am a junior software developer with a focus on front-end and back-end development,
-                dedicated to creating seamless and engaging user interfaces. Passionate about
-                transforming ideas into functional, user-friendly experiences, I bring creativity
-                and precision to every project. Let's collaborate and build innovative solutions
-                together!
-              </p>
+              <h6 id='job-title'>Cell Number</h6>
+              <p id='small-size'>060 7616 425</p>
+              <ul id='list-text'>
+                {/* <li> +27 78 692 2178</li> */}
+                
+              </ul>
+              <h6 id='job-title'>Email</h6>
+              <p id='small-size'>mqekec3@gmail.com</p>
+              <ul id='list-text'>
+                {/* <li>+27 79 077 1591</li> */}
+                
+              </ul>
+              <h6 id='job-title'>Address</h6>
+              <p id='small-size'></p>
+              <ul id='list-text'>
+                <li>10 Afadjato Street, Delft, Cape Town, 7100</li>
+                
+              </ul>
             </div>
           )}
           {selectedContent === 'references' && (
             <div className="references-content">
-              <h5>Contacts</h5>
-              <p className="">
-                I am a junior software developer with a focus on front-end and back-end development,
-                dedicated to creating seamless and engaging user interfaces. Passionate about
-                transforming ideas into functional, user-friendly experiences, I bring creativity
-                and precision to every project. Let's collaborate and build innovative solutions
-                together!
-              </p>
+             <h5>References</h5>
+              <h6 id='job-title'>Afika Maliwa</h6>
+              <p id='small-size'>Capacity: candidate manager</p>
+              <ul id='list-text'>
+                <li> +27 78 692 2178</li>
+                
+              </ul>
+              <h6 id='job-title'>Gilbert Makinana</h6>
+              <p id='small-size'>Afrocentric IP: supervisor</p>
+              <ul id='list-text'>
+                <li>+27 79 077 1591</li>
+                
+              </ul>
+              <h6 id='job-title'>Miss. N. Rhwayi</h6>
+              <p id='small-size'>Department of Education: EMIS Coordinator</p>
+              <ul id='list-text'>
+                <li>+27 84 555 4559</li>
+                
+              </ul>
             </div>
           )}
         </div>
       </div>
-      <h3 className="about-title">
+      {/* <h3 className="">
         <span className="about-line">chum</span>a<span className="name"> Mqeke</span>
-      </h3>
+      </h3> */}
     </div>
   );
 }

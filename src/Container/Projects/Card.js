@@ -27,7 +27,7 @@ function Card({ imagen }) {
       </p>
       <div className={Styles.btnn}>
         <Button text="Demo" />
-        <Button text="Code" />
+        <Button text="GitHub" />
       </div>
     </animated.div> 
   );

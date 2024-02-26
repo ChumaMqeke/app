@@ -47,10 +47,18 @@ const Profile = () => {
             </div>
 
             <div className='icons'>
-              <i className="fab fa-facebook-square"></i>
-              <i className="fab fa-instagram"></i>
-              <i className="fab fa-whatsapp"></i>
-              <i className="fab fa-linkedin"></i>
+            <a href="https://facebook.com/chuma-mqeke" target="_blank" rel="noopener noreferrer">
+          <i className="fa-brands fa-square-facebook"></i>
+        </a>
+        <a href="https://instagram.com/chuma-mqeke" target="_blank" rel="noopener noreferrer">
+          <i className="fa-brands fa-square-instagram"></i>
+        </a>
+        <a href="https://wa.me/0781554750" target="_blank" rel="noopener noreferrer">
+          <i className="fa-brands fa-square-whatsapp"></i>
+        </a>
+        <a href="https://linkedin.com/in/chuma-mqeke" target="_blank" rel="noopener noreferrer">
+          <i className="fa-brands fa-linkedin"></i>
+        </a>
             </div>
 
           </div>

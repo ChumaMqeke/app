@@ -5,8 +5,8 @@
     height: 100vh; 
     position: relative;
     padding-top: 100px;
-    border: 1px solid rgb(112, 112, 111);
-    box-shadow: 5px 5px 10px rgb(112, 112, 111) inset;
+    /* border: 1px solid rgb(112, 112, 111);
+    box-shadow: 5px 5px 10px rgb(112, 112, 111) inset; */
 }
 
 .title {
@@ -95,9 +95,9 @@
 
   .resume-cover {
     
-    width: 1100px;
+    width: 90%;
     height: 700px;
-    margin-left: 50px;
+    margin-left: 130px;
     margin-top: 15px;
   }
   
@@ -106,6 +106,8 @@
      padding-top: -20px;
      box-shadow: 5px 5px 5px rgb(56, 55, 55);
      height: 700px;
+     width: 90%;
+   
   }
 
   .download-button {
@@ -148,6 +150,8 @@
   @media screen and (max-width: 769px) {
   .resume-page {
     padding-top: 50px; /* Adjusted padding for smaller screens */
+    margin: 0;
+    padding: 20px;
   }
 
   .title {
@@ -181,7 +185,8 @@
     height: auto; /* Adjusted height for smaller screens */
     margin-top: 0;
     margin-left: 0; /* Adjusted margin for smaller screens */
-    width: auto; /* Adjusted width for smaller screens */
+    width: 90%; /* Adjusted width for smaller screens */
+    overflow: hidden;
   }
 
   .side-bar-container {
@@ -202,6 +207,7 @@
 
   .resume-page-container {
     height: auto; /* Adjusted height for smaller screens */
+   
   }
 
   .download-button {
@@ -214,4 +220,6 @@
     margin-top: 0; /* Adjusted margin for smaller screens */
     margin-left: 20px; /* Adjusted margin for smaller screens */
   }
+
+  
 }
