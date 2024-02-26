@@ -122,5 +122,6 @@
    height: 1800px;
    position: relative;
    z-index: 1;
+   padding-top: 200px;
   }
 }

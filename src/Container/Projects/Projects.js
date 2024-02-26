@@ -32,7 +32,10 @@ export default function Projects() {
     {
       key: uuidv4(),
       content: (
-        <Card imagen={Project1} />
+        <div>
+      <p>This is some additional text.</p>
+      <Card imagen={Project1} />
+    </div>
       )
     }
   ];

@@ -33,9 +33,9 @@ const Testimonial = () => {
             <h1>Testimonial</h1>
           </div>
           <div className='slide'>
-            {/*{TestimonialApi.map((val, index) => {
+            {TestimonialApi.map((val, index) => {
               return <Slide key={index} image={val.image} design={val.design} name={val.name} offcer={val.offcer} post={val.post} date={val.date} desc={val.desc} />
-            })}*/}
+            })}
 
             {data.map((value, valueIndex) => {
               return <Slide key={value.id} {...value} valueIndex={valueIndex} index={index} />

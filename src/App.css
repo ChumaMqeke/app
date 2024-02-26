@@ -63,7 +63,7 @@ button {
   transform: translateY(-10px);
 }
 .box_shodow {
-  background: linear-gradient(145deg, rgba(255, 124, 3, 1), rgb(241, 180, 122));
+  background: linear-gradient(145deg, rgba(255, 124, 3, 1), rgba(36, 35, 62, 1));
   box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
   border-radius: 10px;
   height: 300px;
@@ -125,6 +125,18 @@ footer p {
   .right {
     width: 100%;
   }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ecf0f3;
+    width: 100%;
+    padding: 3px; /* Add padding */
+    border-right: 2px solid rgb(250, 147, 50);
+    border-left: 2px solid rgb(250, 147, 50);
+   
+}
+
+
 
   
 }

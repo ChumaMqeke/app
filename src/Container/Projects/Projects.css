@@ -52,7 +52,10 @@
   .projects-slide{
    height: 200px;
     width: 50%;
-    
 }
+
+.projects {
+  margin-top: 200px;
+} 
 
 }
