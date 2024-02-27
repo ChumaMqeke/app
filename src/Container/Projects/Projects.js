@@ -17,7 +17,7 @@ export default function Projects() {
         <Card
           imagen={Portfolio}
           title="Portfolio Project"
-          description="This is a description for the Portfolio project."
+          description="This is a description for the Portfolio project. kjzfnbzljk jzsdv jioDsnv."
           demoLink="https://chuma-mqeke.netlify.app/"
           githubLink="https://github.com/ChumaMqeke/My-Personal-Portfolio-"
         />

@@ -8,6 +8,7 @@
     height: fit-content;
     padding: 0 2rem 2rem 2rem;
     border-radius: 10px;
+    position: relative;
     
   }
   
@@ -34,7 +35,37 @@
     align-items: center;
   }
   
+  .shortDescription {
+    /* Your existing short description styles */
+    overflow: hidden;
+  }
 
+  .description {
+    /* Your styles for the description */
+    max-height: 50px; /* Set a max height to limit the visible text */
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out; /* Smooth transition for max-height */
+  }
+
+  .fullDescription {
+    /* Your styles for the full description */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card:hover .description {
+    /* Show the full description when the card is hovered */
+    max-height: 200px; /* Adjust the max height based on your needs */
+  }
   @media screen and (max-width: 769px) {
     .card {
       height: 400px;
