@@ -252,13 +252,13 @@
 
 .contacts-picture {
   height: 300px;
-  width: 300px;
-  margin-left: -32px;
+  width: 250px;
+  margin-left: -25px;
 }
 
 .recaptcha-container {
   padding: 10px;
-  margin-left: -45px;
+  margin-left: -60px;
 }
 
 .text-style {
@@ -281,21 +281,21 @@
 
 .your-name input {
  
-  width: 320px;
-  margin-left: -45px;
+  width: 270px;
+  margin-left: -35px;
 }
 .your-email input {
    
-  width: 320px;
-  margin-left: -45px;
+  width: 270px;
+  margin-left: -35px;
 }
 
 .your-message textarea {
-  width: 320px;
-  margin-left: -45px;
+  width: 270px;
+  margin-left: -35px;
 }
 
 #form-text {
-  margin-left: -45px;
+  margin-left: -35px;
 }
 }

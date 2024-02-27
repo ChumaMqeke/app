@@ -11,31 +11,40 @@ import Carousel from "./Carousel";
 export default function Projects() {
 
   let cards = [
-    // {
-    //   key: uuidv4(),
-    //   content: (
-    //     <Card imagen={projectsProfile} />
-    //   )
-    // },
     {
       key: uuidv4(),
       content: (
-        <Card imagen={Portfolio} />
+        <Card
+          imagen={Portfolio}
+          title="Portfolio Project"
+          description="This is a description for the Portfolio project."
+          demoLink="https://chuma-mqeke.netlify.app/"
+          githubLink="https://github.com/ChumaMqeke/My-Personal-Portfolio-"
+        />
       )
     },
     {
       key: uuidv4(),
       content: (
-        <Card imagen={Project2} />
+        <Card
+          imagen={Project2}
+          title="Project 2"
+          description="This is a description for Project 2."
+          demoLink="https://project2-demo.com"
+          githubLink="https://github.com/project2"
+        />
       )
     },
     {
       key: uuidv4(),
       content: (
-        <div>
-      <p>This is some additional text.</p>
-      <Card imagen={Project1} />
-    </div>
+        <Card
+          imagen={Project1}
+          title="Project 1"
+          description="This is a description for Project 1."
+          demoLink="https://project1-demo.com"
+          githubLink="https://github.com/project1"
+        />
       )
     }
   ];
@@ -43,35 +52,30 @@ export default function Projects() {
   return (
     <div className='projects' id='projects'>
 
-<div className='heading text-center'>
-            <h4>My Works</h4>
-            <h1>Projects</h1>
-          </div>
-    <div className='projects-page' >
-          
+      <div className='heading text-center'>
+        <h4>My Works</h4>
+        <h1>Projects</h1>
+      </div>
+
+      <div className='projects-page' >
         <div className='projects-container'>
-        
-            <div className='projects-slide'>
-            
+          <div className='projects-slide'>
             <div className="">
-      <Carousel
-        cards={cards}
-        height="500px"
-        width="100%"
-        margin="0 auto"
-        offset={200}
-        showArrows={false}
-      />
-    </div>       
-     
-
+              <Carousel
+                cards={cards}
+                height="500px"
+                width="100%"
+                margin="0 auto"
+                offset={200}
+                showArrows={false}
+              />
             </div>       
-            </div>
-
-            <div className='my-picture'>
-                <img className='my-side-picture' src={projectsProfile} alt='projects profile picture'></img>
-            </div>
+          </div>       
         </div>
-        </div> 
+        <div className='my-picture'>
+          <img className='my-side-picture' src={projectsProfile} alt='projects profile picture'></img>
+        </div>
+      </div>
+    </div> 
   );
 }
