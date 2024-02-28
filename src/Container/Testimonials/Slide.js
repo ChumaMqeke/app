@@ -28,7 +28,7 @@ const Slide = ({ id, image, design, name, offcer, post, date, desc, valueIndex, 
         <div className='right'>
           <div className='icon'>
             <div className='quote'>
-              <i class='fal fa-quote-right'></i>
+            <i class="fa-solid fa-quote-left"></i>
             </div>
           </div>
 
@@ -40,8 +40,8 @@ const Slide = ({ id, image, design, name, offcer, post, date, desc, valueIndex, 
         </div>
       </article>
 
-      {/*
-	    <img src='https://rainbowit.net/html/inbio/assets/images/testimonial/final-home--4th.png' alt='' />
+      
+	    {/* <img src='https://rainbowit.net/html/inbio/assets/images/testimonial/final-home--4th.png' alt='' />
         <span className='primary_color'>NCD - DESIGN</span>
         <h2>Mevine Thoda</h2>
         <label>Marketing Officer</label>

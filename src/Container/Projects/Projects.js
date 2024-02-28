@@ -7,6 +7,8 @@ import Portfolio from './image/portfolio.png';
 import { v4 as uuidv4 } from "uuid";
 import Card from "./Card";
 import Carousel from "./Carousel";
+import Slider from 'react-slick';
+
 
 export default function Projects() {
 
@@ -17,7 +19,7 @@ export default function Projects() {
         <Card
           imagen={Portfolio}
           title="Portfolio Project"
-          description="This is a description for the Portfolio project. kjzfnbzljk jzsdv jioDsnv."
+          description="This is a description for the Portfolio project. kjzfnbzljk jzsdv jioDsnv"
           demoLink="https://chuma-mqeke.netlify.app/"
           githubLink="https://github.com/ChumaMqeke/My-Personal-Portfolio-"
         />
@@ -49,6 +51,14 @@ export default function Projects() {
     }
   ];
   
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <div className='projects' id='projects'>
 

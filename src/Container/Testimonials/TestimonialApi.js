@@ -1,7 +1,7 @@
 const TestimonialApi = [
     {
       id: 1,
-      image: "./images/figmaProfile.png",
+      image: "figmaProfile.png",
       design: "NCD - DESIGN",
       name: "Lithemba Zide",
       offcer: "Marketing Officer",
@@ -21,7 +21,7 @@ const TestimonialApi = [
     },
     {
       id: 3,
-      image: "./image/slide3.png",
+      image: "https://rainbowit.net/html/inbio/assets/images/testimonial/final-home--4th.png",
       design: "Rainbow-Themes",
       name: "Alex Smith",
       offcer: "Chief Operating Officer",
