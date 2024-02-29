@@ -90,3 +90,11 @@
       gap: 30px;
     }
   } */
+
+
+  @media screen and (max-width: 767px) {
+    .card {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }

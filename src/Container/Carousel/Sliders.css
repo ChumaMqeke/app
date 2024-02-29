@@ -1,0 +1,39 @@
+/* Sliders.css */
+
+/* Style the outer container of the carousel */
+.custom-carousel {
+    width: 100%;
+    max-width: 900px; /* Adjust the width to fit three cards */
+    margin: auto;
+    perspective: 1000px; /* Add perspective for 3D effect */
+  }
+  
+  /* Style each individual carousel item (card) */
+  .carousel-item {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    width: 100%; /* Occupy full width of the carousel */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    padding: 20px;
+  }
+  
+  /* Apply 3D transform to each card */
+  .carousel-item:hover {
+    transform: rotateY(10deg); /* Adjust the rotation angle as needed */
+  }
+  
+  /* Style the image inside each card */
+  .carousel-item img {
+    width: 100%;
+    max-width: 100%; /* Adjust the image max-width */
+    border-radius: 8px; /* Optional: Add border-radius to the image */
+  }
+  
+  /* Style the legend text below the image */
+  .legend {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555; /* Legend text color */
+  }
+  

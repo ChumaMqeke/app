@@ -9,6 +9,7 @@ import Card from "./Card";
 import Carousel from "./Carousel";
 import Slider from 'react-slick';
 
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export default function Projects() {
 
@@ -19,7 +20,7 @@ export default function Projects() {
         <Card
           imagen={Portfolio}
           title="Portfolio Project"
-          description="This is a description for the Portfolio project. kjzfnbzljk jzsdv jioDsnv"
+          description="I built this site using React.js, blending creativity and technology. Explore my projects and skills as I push boundaries in web development."
           demoLink="https://chuma-mqeke.netlify.app/"
           githubLink="https://github.com/ChumaMqeke/My-Personal-Portfolio-"
         />
@@ -30,10 +31,10 @@ export default function Projects() {
       content: (
         <Card
           imagen={Project2}
-          title="Project 2"
-          description="This is a description for Project 2."
-          demoLink="https://project2-demo.com"
-          githubLink="https://github.com/project2"
+          title="Typing Game"
+          description="A fun way to boost your keyboard skills! 🎮👩‍💻 Enjoy the challenge and improve your typing effortlessly.—a fun way to boost your keyboard skills! 🎮👩‍💻 Enjoy the challenge and improve your typing effortlessly."
+          demoLink="https://rainbow-fudge-46fcab.netlify.app/#"
+          githubLink="https://github.com/ChumaMqeke/HTML-CSS-and-JS-Website"
         />
       )
     },
@@ -42,10 +43,10 @@ export default function Projects() {
       content: (
         <Card
           imagen={Project1}
-          title="Project 1"
-          description="This is a description for Project 1."
+          title="Bank App"
+          description="Meet my Python bank app: your financial command center! 💰💻 Enjoy secure transactions and seamless control, making banking a breeze. 🌐🏦"
           demoLink="https://project1-demo.com"
-          githubLink="https://github.com/project1"
+          githubLink="https://github.com/ChumaMqeke/Banking-App-with-password-generator-"
         />
       )
     }

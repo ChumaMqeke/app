@@ -21,7 +21,7 @@ const TestimonialApi = [
     },
     {
       id: 3,
-      image: "https://rainbowit.net/html/inbio/assets/images/testimonial/final-home--4th.png",
+      // image: "https://rainbowit.net/html/inbio/assets/images/testimonial/final-home--4th.png",
       design: "Rainbow-Themes",
       name: "Alex Smith",
       offcer: "Chief Operating Officer",

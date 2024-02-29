@@ -1,8 +1,7 @@
-// Card.js
-
 import Styles from "./Card.module.css";
 import React from "react";
 import { useSpring, animated } from "react-spring";
+import Slider from "react-slick";
 import Button from "./Button";
 
 function Card({ imagen, title, description, demoLink, githubLink }) {
