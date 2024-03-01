@@ -1,87 +1,69 @@
-import React, { useState, useEffect } from 'react';
+import Slider from "react-slick";
+import { useState, useEffect, useRef } from 'react';
+import "./slick.css";
+import "./slick-theme.css";
+import data from '../../mock.json';
+// import MovieCard from '../MovieCard';
 
-const Card = ({ cardKey, text, icon, btnText, btnLink, btnIcon, headerImg, sendInteraction }) => {
-  const openUrl = (url, label) => {
-    window.open(url, '_blank');
-  };
+const Carousel = ({ initialSlide = 0 }) => {
 
-  const headText = text.length > 30 ? text.substring(0, 30) + '...' : text;
-
-  const headerSection = headerImg ? (
-    <div style={{ backgroundImage: `url("${headerImg}")` }} className="carousel-bg-img">
-      <img src={icon} height="40px" className="carousel-logo-img" />
-    </div>
-  ) : (
-    <img src={icon} height="45px" className="mt-15" />
-  );
-
-  const marginClass = headerImg ? '30' : '15';
-
-  return (
-    <li className="carousel-card carousel-li" key={cardKey}>
-      {headerSection}
-      <div className={`carousel-card-text mt-${marginClass}`}>
-        <p>{headText}</p>
-      </div>
-      <a className="carousel-card-outline" href='javascript:void(0)' onClick={() => openUrl(btnLink, btnText)}>
-        {btnIcon && (
-          <span>
-            <img src={btnIcon} height="12px" /> &nbsp;{btnText}
-          </span>
-        )}
-        {!btnIcon && <span>{btnText}</span>}
-      </a>
-    </li>
-  );
-};
-
-const Carousel = ({ items, sendInteraction }) => {
-  const cards = items.map((t, index) => (
-    <Card
-      key={index}
-      cardKey={index}
-      icon={t.icon}
-      text={t.text}
-      headerImg={t.headerImg}
-      btnText={t.btnText}
-      btnLink={t.btnLink}
-      btnIcon={t.btnIcon}
-      sendInteraction={sendInteraction}
-    />
-  ));
-
-  useEffect(() => {
-    document.documentElement.style.setProperty('--num', items.length);
-  }, [items]);
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handleNextClick = () => {
-    setCurrentIndex((currentIndex + 1) % items.length);
-  };
-
-  const handlePrevClick = () => {
-    setCurrentIndex((currentIndex - 1 + items.length) % items.length);
-  };
-
-  const carouselStyle = {
-    transform: `translateX(-${(currentIndex / items.length) * 100}%)`,
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide,
+    // responsive: [
+    //   {
+    //     breakpoint: 1024,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 3,
+    //       infinite: true,
+    //       dots: true
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 600,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 2,
+    //       initialSlide: 2
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 480,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1
+    //     }
+    //   }
+    // ]
   };
 
   return (
-    <div className="carouselwrapper module-wrapper">
-      <div className="ui">
-        <button onClick={handlePrevClick} className="carousel-button carousel-prev">
-          <span className="material-icons">&lsaquo;</span>
-        </button>
-        <button onClick={handleNextClick} className="carousel-button carousel-next">
-          <span className="material-icons">&#8250;</span>
-        </button>
-      </div>
-      <ul className="carousel" style={carouselStyle}>
-        {cards}
-      </ul>
+    <Slider {...settings}>
+    <div>
+      <h3>1</h3>
     </div>
-  );
+    <div>
+      <h3>2</h3>
+    </div>
+    <div>
+      <h3>3</h3>
+    </div>
+    <div>
+      <h3>4</h3>
+    </div>
+    <div>
+      <h3>5</h3>
+    </div>
+    <div>
+      <h3>6</h3>
+    </div>
+  </Slider>
+  )
 }
+
 export default Carousel;
