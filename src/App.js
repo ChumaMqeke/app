@@ -7,7 +7,11 @@ import Skills from "./Container/Skills/Skills";
 import Projects from "./Container/Projects/Projects";
 import Testimonial from "./Container/Testimonials/Testimonial";
 import Contacts from "./Container/Contacts/Contacts";
-import Carousel from "./Container/Carousel/Carousel";
+import ImageSlider from "./Container/Carousel/ImageSlider";
+
+
+import { IMAGES, VIDEOS, LARGE_IMAGES } from "./data/data";
+
 import "./App.css"
 
 
@@ -24,7 +28,17 @@ function App() {
       <Projects id="projects" />
       <Testimonial id="testimonials" />
       <Contacts id="contacts" />
-      <Carousel />
+      
+      <div className='container'>
+        <ImageSlider images={IMAGES} slidesToShow={5} />
+      </div>
+      <div className='container'>
+        <ImageSlider images={VIDEOS} />
+      </div>
+      <div className='container'>
+        <ImageSlider images={LARGE_IMAGES} />
+      </div>
+
     </div>
   );
 }
