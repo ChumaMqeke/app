@@ -56,26 +56,23 @@ const ImageSlider = ({ images, slidesToShow = 3 }) => {
   };
 
   const templateImages = images.map((image, idx) => {
-    return (
-      <div
-        className={idx === imageIndex ? "activeSlide" : "slide"}
-        key={image.id}
-      >
-        <div className="slideWrapper">
-          {image.code ? (
-            image.code
-          ) : (
-            <>
-              <img src={image.src} alt={image.alt} />
-              <div className="slideDescription">{image.description}</div>
-              <button className="slideButton">Click me</button>
-            </>
-          )}
+  // Assuming your IMAGES data now includes a title for each image
+  return (
+    <div className={idx === imageIndex ? "activeSlide" : "slide"} key={image.id}>
+      <div className="slideCard">
+        <img src={image.src} alt={image.alt} />
+        <div className="cardContent">
+          <h3 className="imageTitle">{image.title}</h3>
+          <p className="imageDescription">{image.description}</p>
+          <div className="buttonContainer">
+            <button className="slideButton">Learn More</button>
+            <button className="slideButton">Buy Now</button>
+          </div>
         </div>
       </div>
-    );
-  });
-
+    </div>
+  );
+});
   return <Slider {...settings}>{templateImages}</Slider>;
 };
 

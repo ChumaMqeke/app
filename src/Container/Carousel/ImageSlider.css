@@ -1,14 +1,71 @@
 /* src/components/ImageSlider.css */
-
 .slide {
-    transform: scale(0.7);
-    transition: transform 300ms;
-    opacity: 0.5;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
   }
   
-  .slideWrapper {
-    display: flex;
-    justify-content: center;
+  .slideCard {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transform: scale(0.85);
+    transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
+  }
+  
+  .slideCard img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .cardContent {
+    padding: 20px;
+  }
+  
+  .imageTitle {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .imageDescription {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  .buttonContainer {
+    text-align: center;
+  }
+  
+  .slideButton {
+    margin: 5px;
+    background-color: rgba(255, 124, 3, 1);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 300ms ease-in-out;
+  }
+  
+  .slideButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .activeSlide .slideCard {
+    transform: scale(1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  .prevArrow, .nextArrow {
+    /* Your existing styles */
+    z-index: 10; /* Ensure arrows are above card */
   }
   
   .prevArrow {
@@ -28,3 +85,71 @@
     cursor: pointer;
     font-size: 2rem;
   }
+  
+
+  /*Added style*/
+
+
+  .projects-page {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    background-color: rgba(36, 35, 62, 1);
+    height: 90vh;
+}
+
+
+#project-title {
+  margin-top: 100px;
+}
+
+.projects-container {
+   /* border: 5px solid; */
+   align-content: center;
+   padding: 10px;
+   margin-left: 135px;
+   width: 100%;
+   height: 600px;
+   display: flex;
+}
+
+.projects-slide{
+    /* border: 5px solid; */
+   
+      height: 100%;
+      width: 90%;
+    
+    
+}
+
+.my-picture {
+    /* border: 5px solid; */
+    width: 300px; /* Adjust width */
+  height: 100%;
+  background-image: linear-gradient(to bottom, #fff, rgba(36, 35, 62, 1));
+}
+
+
+
+
+.container {
+  padding: 2.5rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .projects-slide {
+    width: 100%;
+    height: auto;
+  }
+
+ 
+
+  .my-side-picture {
+  display: none;
+  }
+}

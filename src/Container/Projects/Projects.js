@@ -68,7 +68,7 @@ export default function Projects() {
         <h1>Projects</h1>
       </div>
 
-      <div className='projects-page' >
+      <div className='projects-page'>
         <div className='projects-container'>
           <div className='projects-slide'>
             <div className="">

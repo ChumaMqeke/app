@@ -7,7 +7,7 @@ const CardSlider = ({ cards }) => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Adjust as needed
+    slidesToShow: 3, 
     slidesToScroll: 1,
     responsive: [
       {

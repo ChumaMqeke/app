@@ -5,6 +5,7 @@ export const IMAGES = [
       id: 1,
       src: "/images/aboutPicture.png",
       alt: "Placeholder image",
+      description: "This is a description for Image 1.",
     },
     {
       id: 2,
