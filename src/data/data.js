@@ -3,35 +3,42 @@
 export const IMAGES = [
     {
       id: 1,
-      src: "/images/aboutPicture.png",
+      src: "/images/portfolio.png",
       alt: "Placeholder image",
-      description: "This is a description for Image 1.",
+      title: "My React Portfolio",
+      linkGit: "https://github.com/ChumaMqeke/My-Personal-Portfolio-",
+      link: "https://chuma-mqeke.netlify.app/",
+      description: "My portfolio, built with React JS, highlights my work in a sleek and responsive design.",
     },
     {
       id: 2,
-      src: "/images/aboutPicture.png",
+      src: "/images/project1.png",
       alt: "Placeholder image",
+      title: "Python Bank App",
+      linkGit: "https://github.com/ChumaMqeke/Banking-App-with-password-generator-",
+      link: "#",
+      description: "The Python Banking App offers seamless financial management with user-friendly features for convenient banking on the go.",
     },
     {
       id: 3,
-      src: "/images/aboutPicture.png",
+      src: "/images/project2.png",
       alt: "Placeholder image",
+      title: "Typing Game",
+      linkGit: "https://github.com/ChumaMqeke/HTML-CSS-and-JS-Website",
+      link: "https://rainbow-fudge-46fcab.netlify.app/#",
+      description: "Improve your typing skills with our fun and easy-to-use typing game!",
     },
     {
       id: 4,
-      src: "/images/aboutPicture.png",
+      src: "/images/project3.png",
       alt: "Placeholder image",
+      title: "JavaScript Website",
+      linkGit: "https://github.com/ChumaMqeke/HTML-CSS-and-JS-Website",
+      link: "https://rainbow-fudge-46fcab.netlify.app/#",
+      description: "Explore seamless web solutions with our JavaScript service website – simplicity meets innovation.",
     },
-    {
-      id: 5,
-      src: "/images/image.png",
-      alt: "Placeholder image",
-    },
-    {
-      id: 6,
-      src: "/images/image.png",
-      alt: "Placeholder image",
-    },
+
+
   ];
   
 //   export const LARGE_IMAGES = [

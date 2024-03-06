@@ -1,68 +1,78 @@
-import React from 'react';
+import React, { useState } from "react";
+import Slider from "react-slick";
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import "./ImageSlider.css";
 import './Projects.css';
-import projectsProfile from './image/project-profile.png';
-import Project1 from './image/project1.png';
-import Project2 from './image/project2.png';
-import Portfolio from './image/portfolio.png';
-import { v4 as uuidv4 } from "uuid";
-import Card from "./Card";
-import Carousel from "./Carousel";
-import Slider from 'react-slick';
-
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import myProfile from './image/project-profile.png';
 
-export default function Projects() {
+const NextArrow = ({ onClick }) => {
+  return (
+    <div className='nextArrow' onClick={onClick}>
+      <BsChevronRight />
+    </div>
+  );
+};
 
-  let cards = [
-    {
-      key: uuidv4(),
-      content: (
-        <Card
-          imagen={Portfolio}
-          title="Portfolio Project"
-          description="I built this site using React.js, blending creativity and technology. Explore my projects and skills as I push boundaries in web development."
-          demoLink="https://chuma-mqeke.netlify.app/"
-          githubLink="https://github.com/ChumaMqeke/My-Personal-Portfolio-"
-        />
-      )
-    },
-    {
-      key: uuidv4(),
-      content: (
-        <Card
-          imagen={Project2}
-          title="Typing Game"
-          description="A fun way to boost your keyboard skills! 🎮👩‍💻 Enjoy the challenge and improve your typing effortlessly.—a fun way to boost your keyboard skills! 🎮👩‍💻 Enjoy the challenge and improve your typing effortlessly."
-          demoLink="https://rainbow-fudge-46fcab.netlify.app/#"
-          githubLink="https://github.com/ChumaMqeke/HTML-CSS-and-JS-Website"
-        />
-      )
-    },
-    {
-      key: uuidv4(),
-      content: (
-        <Card
-          imagen={Project1}
-          title="Bank App"
-          description="Meet my Python bank app: your financial command center! 💰💻 Enjoy secure transactions and seamless control, making banking a breeze. 🌐🏦"
-          demoLink="https://project1-demo.com"
-          githubLink="https://github.com/ChumaMqeke/Banking-App-with-password-generator-"
-        />
-      )
-    }
-  ];
-  
+const PrevArrow = ({ onClick }) => {
+  return (
+    <div className='prevArrow' onClick={onClick}>
+      <BsChevronLeft />
+    </div>
+  );
+};
+
+const Slide = ({ image, isActive }) => (
+  <div className={isActive ? "activeSlide" : "slide"}>
+    <div className="slideCard">
+      <img src={image.src} alt={image.alt} />
+      <div className="cardContent">
+        <h3 className="imageTitle">{image.title}</h3>
+        <p className="imageDescription">{image.description}</p>
+        <div className="buttonContainer">
+        <a href={image.linkGit} className="slideButton">GitHup</a>
+        <a href={image.link} className="slideButton">Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+const Projects = ({ images, slidesToShow = 2 }) => {
+  const [imageIndex, setImageIndex] = useState(0);
+
   const settings = {
-    dots: true,
+    centerMode: true,
     infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    dots: false,
+    speed: 300,
+    slidesToShow: slidesToShow,
+    centerPadding: "0",
+    swipeToSlide: true,
+    focusOnSelect: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    beforeChange: (current, next) => setImageIndex(next),
+    responsive: [
+      {
+        breakpoint: 1490,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 820,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
     <div className='projects' id='projects'>
-
       <div className='heading text-center'>
         <h4>My Works</h4>
         <h1>Projects</h1>
@@ -71,22 +81,19 @@ export default function Projects() {
       <div className='projects-page'>
         <div className='projects-container'>
           <div className='projects-slide'>
-            <div className="">
-              <Carousel
-                cards={cards}
-                height="500px"
-                width="100%"
-                margin="0 auto"
-                offset={200}
-                showArrows={false}
-              />
-            </div>       
-          </div>       
-        </div>
-        <div className='my-picture'>
-          <img className='my-side-picture' src={projectsProfile} alt='projects profile picture'></img>
+            <Slider {...settings}>
+              {images.map((image, idx) => (
+                <Slide key={image.id} image={image} isActive={idx === imageIndex} />
+              ))}
+            </Slider>
+          </div>
+          <div className='my-picture'>
+            <img className='my-side-picture' src={myProfile} alt='projects profile picture' />
+          </div>
         </div>
       </div>
-    </div> 
+    </div>
   );
-}
+};
+
+export default Projects;

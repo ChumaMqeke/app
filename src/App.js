@@ -7,7 +7,7 @@ import Skills from "./Container/Skills/Skills";
 import Projects from "./Container/Projects/Projects";
 import Testimonial from "./Container/Testimonials/Testimonial";
 import Contacts from "./Container/Contacts/Contacts";
-import ImageSlider from "./Container/Carousel/ImageSlider";
+// import ImageSlider from "./Container/Carousel/ImageSlider";
 
 
 import { IMAGES } from "./data/data";
@@ -27,13 +27,14 @@ function App() {
       <About id="about" />
       <Resume id="resume" />
       <Skills id="skills" />
-      <Projects id="projects" />
+      <Projects images={IMAGES} id="projects" />
+
       <Testimonial id="testimonials" />
       <Contacts id="contacts" />
       
-      <div className='container'>
+      {/* <div className='container'>
         <ImageSlider images={IMAGES} slidesToShow={5} />
-      </div>
+      </div> */}
       {/* <div className='container'>
         <ImageSlider images={VIDEOS} />
       </div>
