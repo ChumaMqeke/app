@@ -167,10 +167,11 @@ const Contacts = () => {
       <div className="footer">
         <div className="footer-icons">
           <div className="icons-in-footer">
-            <i className="fa-brands fa-square-facebook"></i>
-            <i className="fa-brands fa-square-instagram"></i>
-            <i className="fa-brands fa-square-whatsapp"></i>
-            <i className="fa-brands fa-linkedin"></i>
+          <a href="https://www.facebook.com/" target="_blank"><i className="fa-brands fa-square-facebook"></i></a>
+<a href="https://www.instagram.com/" target="_blank"><i className="fa-brands fa-square-instagram"></i></a>
+<a href="https://wa.me/" target="_blank"><i className="fa-brands fa-square-whatsapp"></i></a>
+<a href="https://www.linkedin.com/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
+
           </div>
         </div>
         <div className="copyrights">Copyrights © 2024 Chuma Mqeke. All Rights reserved</div>
