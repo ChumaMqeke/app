@@ -7,6 +7,7 @@ import Skills from "./Container/Skills/Skills";
 import Projects from "./Container/Projects/Projects";
 import Testimonial from "./Container/Testimonials/Testimonial";
 import Contacts from "./Container/Contacts/Contacts";
+import Bot from "./Container/Bot";
 // import ImageSlider from "./Container/Carousel/ImageSlider";
 
 
@@ -31,7 +32,7 @@ function App() {
 
       <Testimonial id="testimonials" />
       <Contacts id="contacts" />
-      
+      <Bot />
       {/* <div className='container'>
         <ImageSlider images={IMAGES} slidesToShow={5} />
       </div> */}
