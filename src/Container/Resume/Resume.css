@@ -5,6 +5,7 @@
     height: 100vh; 
     position: relative;
     padding-top: 100px;
+   
     /* border: 1px solid rgb(112, 112, 111);
     box-shadow: 5px 5px 10px rgb(112, 112, 111) inset; */
 }
@@ -70,7 +71,7 @@
   }
   
   .cv-content.slide-out {
-    height: 30vh; 
+    height: 40vh; 
     margin-top: -600px;
     margin-left: 500px;
     width: 400px;
