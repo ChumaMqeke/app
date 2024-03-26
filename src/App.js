@@ -7,7 +7,7 @@ import Skills from "./Container/Skills/Skills";
 import Projects from "./Container/Projects/Projects";
 import Testimonial from "./Container/Testimonials/Testimonial";
 import Contacts from "./Container/Contacts/Contacts";
-import Bot from "./Container/Bot";
+import Bot from "./Container/Bot/Bot";
 // import ImageSlider from "./Container/Carousel/ImageSlider";
 
 
