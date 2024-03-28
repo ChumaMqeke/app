@@ -149,9 +149,9 @@ const Contacts = () => {
             </div>
           </div>
 
-          <div className="recaptcha-container">
+          <div className="recaptcha-container"> 
             <ReCAPTCHA
-              sitekey="6LeuXX0pAAAAAOkExvnJvOtbazNLW0KMcUJ9-dpT" // replace with your actual reCAPTCHA site key
+              sitekey="6LcaGKUpAAAAAAfVcxctQ4RDQO74vB4DMFA3N7Qq" // 6LeuXX0pAAAAAOkExvnJvOtbazNLW0KMcUJ9-dpT
               onChange={(value) => setRecaptchaValue(value)}
             />
           </div>

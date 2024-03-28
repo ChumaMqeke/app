@@ -1,21 +1,35 @@
 .fixed {
-display: flex; 
-right: 1rem; 
-bottom: 1.25rem; 
-justify-content: center; 
-align-items: center; 
-border-radius: 9999px; 
-width: 6rem; 
-height: 6rem; 
-font-size: 2.25rem;
-line-height: 2.5rem; 
-color: #2fbd3b; 
-cursor: pointer; 
+    position: sticky;
+    display: flex;  
+    margin-left: 75rem;
+    bottom: 1.25rem; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 9999px; 
+    width: 4rem; 
+    height: 4rem; 
+    font-size: 3rem;
+    line-height: 2.5rem; 
+    color: rgba(255, 124, 3, 1); 
+    cursor: pointer; 
+    animation: bounce 0.5s infinite alternate; /* Bounce animation */
 }
 
-@media (min-width: 640px) {
-    .fixed {
-        right: 2rem; 
-    } 
- }
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
 
+@media screen and (max-width: 769px) {
+    .fixed {
+        position: sticky;
+        display: flex;  
+        margin-left: 17rem;
+        bottom: 1.25rem;
+        font-size: 2rem;
+    } 
+}
